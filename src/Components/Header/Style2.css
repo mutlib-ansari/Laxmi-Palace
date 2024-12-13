@@ -1,0 +1,32 @@
+.custom-button2 {
+    background-color: Brown  !important; /* Default background color */
+    color: #fff  !important;
+    padding: 10px 20px;
+    border: none !important;
+    margin-right: 20px !important;
+    padding: 25px !important;
+    padding-right: 30px !important;
+    border-radius: 0% !important;
+  }
+
+  .custom-button2:hover {
+    background-color: white !important; /* Hover background color */
+    color: Brown !important;
+  }
+
+
+  .custom-button3 {
+    background-color: Brown  !important; /* Default background color */
+    color: #fff  !important;
+    padding: 10px 20px;
+    border: none !important;
+   
+    padding: 20px !important;
+    padding-right: 30px !important;
+    
+  }
+
+  .custom-button3:hover {
+    background-color: white !important; /* Hover background color */
+    color: Brown !important;
+  }

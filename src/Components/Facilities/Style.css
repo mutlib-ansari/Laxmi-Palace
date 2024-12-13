@@ -1,0 +1,15 @@
+.custom-button {
+    background-color: #fff !important; /* Default background color */
+    color: Brown !important;
+    padding: 10px 20px;
+    border: none !important;
+    margin-right: 20px !important;
+    padding: 25px !important;
+    padding-right: 30px !important;
+    border-radius: 0% !important;
+  }
+
+  .custom-button:hover {
+    background-color: Brown !important; /* Hover background color */
+    color: white!important;
+  }
