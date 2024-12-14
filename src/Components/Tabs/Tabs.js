@@ -127,8 +127,10 @@ function Tabs() {
     <div className="container mx-auto w-full max-w-[1280px] flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
       {/* Left Section - Image */}
       <div className="w-full md:w-2/5 flex justify-center md:justify-start">
-        <img src={frame} alt="Frame" className="w-3/4 md:w-full" />
+        <img src={frame} alt="Frame" className="w-full md:w-full"/>
       </div>
+   
+
 
       {/* Right Section - FAQ */}
       <div

@@ -176,8 +176,8 @@ const MySlider = () => {
                     perPage: 5, // Show 1 slide at a time on small screens
                     perMove: 1, // Move 1 slide at a time
                     focus: "center",
-                    gap: "1rem",
-                    autoWidth: false, // Disable autoWidth for better control
+                    gap: "3rem",
+                    autoWidth: true, // Disable autoWidth for better control
                     padding: { left: "1rem", right: "1rem" }, // Add padding for small screens
                     breakpoints: {
                         640: {
@@ -185,7 +185,7 @@ const MySlider = () => {
                             gap: "1rem",
                         },
                         768: {
-                            perPage: 2, // Show 2 slides on medium screens
+                            perPage: 1, // Show 2 slides on medium screens
                             gap: "1rem",
                         },
                         1024: {

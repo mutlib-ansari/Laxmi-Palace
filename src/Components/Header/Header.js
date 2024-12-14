@@ -317,12 +317,12 @@ function Navbar() {
                 <div className="flex items-center justify-between py-4 px-6">
                     {/* Logo */}
                     <div className="flex items-center space-x-2">
-                        <img src={logo} className="h-28" alt="Logo" />
+                        <img src={logo} className="h-16 md:h-28 " alt="Logo" />
                     </div>
 
-                    
+
                     <div className="hidden  md:flex items-center space-x-4">
-                        
+
                         <div className="flex space-x-4 items-center">
                             <a
                                 href="https://wa.me/+909876543210"
@@ -336,7 +336,7 @@ function Navbar() {
                             <span className="text-gray-500">/</span>
                             <span>+91-0123456789</span>
                         </div>
-                        
+
 
                         {/* Navigation Links */}
                         <nav className="flex space-x-8">
@@ -383,12 +383,12 @@ function Navbar() {
                     </div>
                 )}
 
-                
+
                 <div className="flex flex-wrap p-6">
-                    
+
                     <div className="w-full md:w-3/5 p-6 font-normal mt-auto mb-auto">
                         <span className="text-lg font-serif text-amber-800">M A J E S T I C R O O M S</span>
-                        <h1 className="font-serif text-[40px] md:text-[60px] leading-[50px] md:leading-[70px] text-gray-800">
+                        <h1 className="font-serif text-[32px] md:text-[60px] leading-[50px] md:leading-[70px] text-gray-800">
                             Discover Your Paradise <br />
                             Where You Are
                         </h1>
@@ -396,14 +396,14 @@ function Navbar() {
                             Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
                             tristique velit efficitur, a pulvinar sem hasellus.
                         </p>
-                        
+
                         <Button className="custom-button2 mt-4 mr-5 text-lg font-serif bg-customBrown">Explore Now</Button>
 
                     </div>
 
-                  
-                    <div className="w-full md:w-2/5 bg-white shadow-md p-6 border border-gray-200">
-                        <form style={{ backgroundImage: `url(${frame})` }} className="bg-cover space-y-4 p-6">
+
+                     <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
+                        <form style={{ backgroundImage: `url(${frame})` }} className="bg-cover bg-no-repeat  space-y-4 p-6">
                             <h2 className="text-xl font-Fraunces text-gray-800 text-center">Check Availability</h2>
                             <div>
                                 <label className="block text-amber-950 mb-1">Check In</label>
@@ -441,7 +441,9 @@ function Navbar() {
 
                             <Button className="custom-button3 w-full ">Check Availability</Button>
                         </form>
-                    </div>
+                    </div> 
+
+
                 </div>
             </div>
         </div>
