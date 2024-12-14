@@ -60,7 +60,7 @@ import bg from '../Assests/Mask.png';
 import home1 from '../Assests/home1.png';
 import home2 from '../Assests/home2.png';
 import home3 from '../Assests/home3.png';
-import frame2 from '../Assests/frame2.png';
+import frame2 from '../Assests/frame4.png';
 
 function Dasbord() {
     return (
@@ -100,9 +100,21 @@ function Dasbord() {
                 </div>
 
                 {/* Image Section */}
-                <div className="flex justify-center mt-10 sm:mt-16">
-                    <img src={frame2} alt="Frame" className="rounded-3xl w-full max-w-md sm:max-w-lg h-auto" />
-                </div>
+                {/* <div className="flex justify-center mt-10 sm:mt-16 w-full mb-5">
+                    <img src={frame2} alt="Frame" className="rounded-3xl h-full  max-w-md sm:max-w-[64rem] " />
+                </div> */}
+
+
+<div className="flex justify-center mt-10 sm:mt-16 w-full mb-5 px-4">
+  <img
+    src={frame2}
+    alt="Frame"
+    className="rounded-3xl h-auto max-w-full sm:max-w-[64rem] object-cover"
+  />
+</div>
+
+
+               
             </div>
         </div>
     );

@@ -75,7 +75,7 @@
 //         </div>
 //       </div>
 //     </div>
-    
+
 
 
 
@@ -111,7 +111,7 @@ function Herosection() {
     >
       <div className="container mx-auto w-full max-w-[1280px] grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
         {/* Left Section - Images */}
-        <div className="relative flex justify-center items-start flex-wrap gap-4">
+        {/* <div className="relative flex justify-center items-start flex-wrap gap-4 ">
           <img src={img1} className="w-2/3 sm:w-1/2 md:w-[45%] m-2" alt="Image 1" />
           <img
             src={img2}
@@ -123,7 +123,31 @@ function Herosection() {
             className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10 md:bottom-20 w-1/3 md:w-1/4"
             alt="Mid Logo"
           />
+        </div> */}
+
+        <div className="relative flex justify-center items-start flex-wrap gap-4">
+          {/* Image 1 */}
+          <img
+            src={img1}
+            className="w-2/3 sm:w-1/2 md:w-[45%] m-2 hidden md:block"
+            alt="Image 1"
+          />
+
+          {/* Image 2 */}
+          <img
+            src={img2}
+            className="w-2/3 sm:w-1/2 md:w-[45%] m-2 mt-4 md:mt-10 hidden md:block"
+            alt="Image 2"
+          />
+
+          {/* Mid Logo */}
+          <img
+            src={mid}
+            className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10 md:bottom-20 w-1/3 md:w-1/4 hidden md:block"
+            alt="Mid Logo"
+          />
         </div>
+
 
         {/* Right Section - Content */}
         <div className="p-4 md:p-10 space-y-6">
