@@ -388,7 +388,7 @@ function Navbar() {
 
                     <div className="w-full md:w-3/5 p-6 font-normal mt-auto mb-auto">
                         <span className="text-lg font-serif text-amber-800">M A J E S T I C R O O M S</span>
-                        <h1 className="font-serif text-[32px] md:text-[60px] leading-[50px] md:leading-[70px] text-gray-800">
+                        <h1 className="font-serif text-[25px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
                             Discover Your Paradise <br />
                             Where You Are
                         </h1>
