@@ -386,18 +386,18 @@ function Navbar() {
 
                 <div className="flex flex-wrap p-6">
 
-                    <div className="w-full md:w-3/5 p-6 font-normal mt-auto mb-auto">
+                    <div className="w-full md:w-3/5  font-normal mt-auto mb-auto">
                         <span className="text-lg font-serif text-amber-800">M A J E S T I C R O O M S</span>
                         <h1 className="font-serif text-[25px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
                             Discover Your Paradise <br />
                             Where You Are
                         </h1>
-                        <p className="font-serif text-amber-950 mt-4">
+                        <p className="font-serif text-amber-950 mt-4 pr-6 ">
                             Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
                             tristique velit efficitur, a pulvinar sem hasellus.
                         </p>
 
-                        <Button className="custom-button2 mt-4 mr-5 text-lg font-serif bg-customBrown">Explore Now</Button>
+                        <Button className="custom-button2 mt-4 mr-5 text-lg font-serif bg-customBrown mb-4">Explore Now</Button>
 
                     </div>
 
