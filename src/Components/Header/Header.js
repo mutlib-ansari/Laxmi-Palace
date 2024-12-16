@@ -300,111 +300,639 @@
 
 // export default Navbar;
 
+// import React, { useState } from "react";
+// import bg from "../Assests/bg2.jpg";
+// import logo from "../Assests/logo.png";
+// import frame from "../Assests/frame.png";
+// import icon1 from "../Assests/whatsapp.png";
+// import { Button } from 'antd';
+// import '../Header/Style2.css'
+
+// function Navbar() {
+//      // Define the state for mobile menu visibility
+//      const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+//      // Toggle menu visibility
+//      const toggleMenu = () => {
+//          setIsMobileMenuOpen(!isMobileMenuOpen); // Correct state update
+//      };
+//     return (
+//         <div className="relative w-full bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
+//             <div className="container mx-auto w-full max-w-[1280px]">
+//                 <div className="flex items-center justify-between py-4 px-6">
+//                     {/* Logo */}
+//                     <div className="flex items-center space-x-2">
+//                         <img src={logo} className="h-16 md:h-28 " alt="Logo" />
+//                     </div>
+
+
+//                     {/* <div className="hidden  md:flex items-center space-x-4">
+
+//                         <div className="flex space-x-4 items-center">
+//                             <a
+//                                 href="https://wa.me/+909876543210"
+//                                 target="_blank"
+//                                 rel="noopener noreferrer"
+//                                 className="flex space-x-2 items-center"
+//                             >
+//                                 <img src={icon1} alt="WhatsApp" className="h-6" />
+//                                 <span>+90-9876543210</span>
+//                             </a>
+//                             <span className="text-gray-500">/</span>
+//                             <span>+91-0123456789</span>
+//                         </div>
+
+
+
+
+//                         {/* Navigation Links */}
+//                     {/* <nav className="flex space-x-8">
+//                             <a href="#home" className="text-black hover:text-red-800">HOME</a>
+//                             <a href="#about" className="text-black hover:text-red-800">ABOUT</a>
+//                             <a href="#rooms" className="text-black hover:text-red-800">ROOMS</a>
+//                             <a href="#hotel" className="text-black hover:text-red-800">HOTEL</a>
+//                             <a href="#pages" className="text-black hover:text-red-800">PAGES</a>
+//                             <a href="#contact" className="text-black hover:text-red-800">CONTACT US</a>
+//                         </nav>
+//                     </div> */}
+
+
+//                     <div className=" py-4 px-6">
+
+//                         <div className=" hidden md:flex justify-end  mb-4">
+
+//                             <div className="flex space-x-4 items-center">
+//                                 <a
+//                                     href="https://wa.me/+909876543210"
+//                                     target="_blank"
+//                                     rel="noopener noreferrer"
+//                                     className="flex space-x-2 items-center"
+//                                 >
+//                                     <img src={icon1} alt="WhatsApp" className="h-6" />
+//                                     <span className="text-black">+90-9876543210</span>
+//                                 </a>
+//                                 <span className="text-gray-500">/</span>
+//                                 <span className="text-black">+91-0123456789</span>
+//                             </div>
+//                         </div>
+
+//                         {/* Navigation Menu */}
+//                         <div className="hidden md:flex items-center justify-center space-x-8">
+//                             <nav className="flex space-x-8">
+//                                 <a href="#home" className="text-black hover:text-red-800">HOME</a>
+//                                 <a href="#about" className="text-black hover:text-red-800">ABOUT</a>
+//                                 <a href="#rooms" className="text-black hover:text-red-800">ROOMS</a>
+//                                 <a href="#hotel" className="text-black hover:text-red-800">HOTEL</a>
+//                                 <a href="#pages" className="text-black hover:text-red-800">PAGES</a>
+//                                 <a href="#contact" className="text-black hover:text-red-800">CONTACT US</a>
+//                             </nav>
+//                         </div>
+//                     </div>
+
+
+//                     {/* Mobile Menu Toggle */}
+//                     <button
+//                         className="md:hidden text-gray-700 focus:outline-none"
+//                         onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+//                     >
+//                         <svg
+//                             xmlns="http://www.w3.org/2000/svg"
+//                             fill="none"
+//                             viewBox="0 0 24 24"
+//                             strokeWidth={1.5}
+//                             stroke="currentColor"
+//                             className="w-6 h-6"
+//                         >
+//                             <path
+//                                 strokeLinecap="round"
+//                                 strokeLinejoin="round"
+//                                 d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5"
+//                             />
+//                         </svg>
+//                     </button>
+//                 </div>
+
+//                 {/* Mobile Menu
+//                 {isMobileMenuOpen && (
+//                     <div className="md:hidden flex flex-col space-y-4 px-6 pb-4">
+//                         <a href="#home" className="text-black hover:text-red-800">HOME</a>
+//                         <a href="#about" className="text-black hover:text-red-800">ABOUT</a>
+//                         <a href="#rooms" className="text-black hover:text-red-800">ROOMS</a>
+//                         <a href="#hotel" className="text-black hover:text-red-800">HOTEL</a>
+//                         <a href="#pages" className="text-black hover:text-red-800">PAGES</a>
+//                         <a href="#contact" className="text-black hover:text-red-800">CONTACT US</a>
+//                     </div>
+//                 )} */}
+
+
+//                 {/* 
+//                 {isMobileMenuOpen && (
+//                     <>
+
+//                         <div
+//                             className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
+//                             onClick={() => setIsMobileMenuOpen(false)} // Close menu when clicking on the background
+//                         ></div>
+
+
+
+
+//                         <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"></div>
+
+
+//                         <div className="fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 transform transition-transform duration-300">
+//                             <a
+//                                 href="#home"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Home
+//                             </a>
+//                             <a
+//                                 href="#about"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 About
+//                             </a>
+//                             <a
+//                                 href="#rooms"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Rooms
+//                             </a>
+//                             <a
+//                                 href="#hotel"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Hotel
+//                             </a>
+//                             <a
+//                                 href="#pages"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Pages
+//                             </a>
+//                             <a
+//                                 href="#contact"
+//                                 className="block px-6 py-4 text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Contact Us
+//                             </a>
+//                         </div>
+//                     </>
+//                 )} */}
+
+
+
+//                 {/* <button
+//                     onClick={toggleMenu} // Open menu
+//                     className="md:hidden p-4 text-gray-800 hover:text-amber-800"
+//                 >
+//                     &#9776;
+//                 </button>
+
+
+//                  {isMobileMenuOpen && (
+//                     <>
+
+//                         <div
+//                            onClick={toggleMenu} // Close menu on background click
+//                             className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
+//                         ></div>
+
+
+//                         <div className="fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 transform transition-transform duration-300">
+//                             {/*
+//                             <div className="flex justify-end p-4">
+//                                 <button
+//                                     onClick={toggleMenu} 
+//                                     className="text-gray-800 hover:text-red-600 text-3xl font-bold"
+//                                 >
+//                                     &times; 
+//                                 </button>
+//                             </div>
+
+
+//                             <nav>
+//                                 <a
+//                                     href="#home"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Home
+//                                 </a>
+
+
+//                                 <div className="ml-8 mb-2">
+//                                     <a
+//                                         href="#abc"
+//                                         className="block px-4 py-2 text-gray-600 hover:text-amber-800"
+//                                     >
+//                                         ABC
+//                                     </a>
+//                                     <a
+//                                         href="#vspd"
+//                                         className="block px-4 py-2 text-gray-600 hover:text-amber-800"
+//                                     >
+//                                         VSPD
+//                                     </a>
+//                                     <a
+//                                         href="#etert"
+//                                         className="block px-4 py-2 text-gray-600 hover:text-amber-800"
+//                                     >
+//                                         ETERT
+//                                     </a>
+//                                 </div>
+
+//                                 <a
+//                                     href="#about"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     About
+//                                 </a>
+//                                 <a
+//                                     href="#rooms"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Rooms
+//                                 </a>
+//                                 <a
+//                                     href="#hotel"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Hotel
+//                                 </a>
+//                                 <a
+//                                     href="#pages"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Pages
+//                                 </a>
+//                                 <a
+//                                     href="#contact"
+//                                     className="block px-6 py-4 text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Contact Us
+//                                 </a>
+//                             </nav>
+//                         </div>
+
+
+//                     </>
+//                 )}   */}
+
+
+//  <div>
+//             {/* Menu Toggle Button */}
+//             <button
+//                 onClick={toggleMenu} // Open menu
+//                 className="md:hidden p-4 text-gray-800 hover:text-amber-800"
+//             >
+//                 &#9776; {/* Hamburger icon */}
+//             </button>
+
+//             {/* Mobile Menu */}
+//             {isMobileMenuOpen && (
+//                 <>
+//                     {/* Blurred Background */}
+//                     <div
+//                         onClick={toggleMenu} // Close menu on background click
+//                         className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
+//                     ></div>
+
+//                     {/* Slide-in Menu */}
+//                     <div className="fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 transform transition-transform duration-300">
+//                         {/* Close Icon */}
+//                         <div className="flex justify-end p-4">
+//                             <button
+//                                 onClick={toggleMenu} // Close menu
+//                                 className="text-gray-800 hover:text-red-600 text-3xl font-bold"
+//                             >
+//                                 &times; {/* Cross icon */}
+//                             </button>
+//                         </div>
+
+//                         {/* Navigation Links */}
+//                         <nav>
+//                             <a
+//                                 href="#home"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Home
+//                             </a>
+
+//                             {/* Submenu under Home */}
+//                             <div className="ml-8 mb-2">
+//                                 <a
+//                                     href="#abc"
+//                                     className="block px-4 py-2 text-gray-600 hover:text-amber-800"
+//                                 >
+//                                     ABC
+//                                 </a>
+//                                 <a
+//                                     href="#vspd"
+//                                     className="block px-4 py-2 text-gray-600 hover:text-amber-800"
+//                                 >
+//                                     VSPD
+//                                 </a>
+//                                 <a
+//                                     href="#etert"
+//                                     className="block px-4 py-2 text-gray-600 hover:text-amber-800"
+//                                 >
+//                                     ETERT
+//                                 </a>
+//                             </div>
+
+//                             <a
+//                                 href="#about"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 About
+//                             </a>
+//                             <a
+//                                 href="#rooms"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Rooms
+//                             </a>
+//                             <a
+//                                 href="#hotel"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Hotel
+//                             </a>
+//                             <a
+//                                 href="#pages"
+//                                 className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Pages
+//                             </a>
+//                             <a
+//                                 href="#contact"
+//                                 className="block px-6 py-4 text-gray-800 hover:bg-amber-800 hover:text-white"
+//                             >
+//                                 Contact Us
+//                             </a>
+//                         </nav>
+//                     </div>
+//                 </>
+//             )}
+//         </div>
+
+
+//                 <div className="flex flex-wrap p-6">
+
+//                     <div className="w-full md:w-3/5  font-normal mt-auto mb-auto">
+//                         <span className="text-lg font-serif text-amber-800">M A J E S T I C R O O M S</span>
+//                         <h1 className="font-serif text-[25px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
+//                             Discover Your Paradise <br />
+//                             Where You Are
+//                         </h1>
+//                         <p className="font-serif text-amber-950 mt-4 pr-6 ">
+//                             Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
+//                             tristique velit efficitur, a pulvinar sem hasellus.
+//                         </p>
+
+//                         <Button className="custom-button2 mt-4 mr-5 text-lg font-serif bg-customBrown mb-4">Explore Now</Button>
+
+//                     </div>
+
+
+//                     <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
+//                         <form style={{ backgroundImage: `url(${frame})` }} className="bg-cover bg-no-repeat  space-y-4 p-6">
+//                             <h2 className="text-xl font-Fraunces text-gray-800 text-center">Check Availability</h2>
+//                             <div>
+//                                 <label className="block text-amber-950 mb-1">Check In</label>
+//                                 <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
+//                                     <option>13 October 2024</option>
+//                                     <option>14 October 2024</option>
+//                                     <option>15 October 2024</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Check Out</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>14 October 2024</option>
+//                                     <option>15 October 2024</option>
+//                                     <option>16 October 2024</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Adults</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>1</option>
+//                                     <option>2</option>
+//                                     <option>3</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Children</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>1</option>
+//                                     <option>2</option>
+//                                     <option>3</option>
+//                                 </select>
+//                             </div>
+
+
+//                             <Button className="custom-button3 w-full ">Check Availability</Button>
+//                         </form>
+//                     </div>
+
+
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default Navbar;
+
+
+
+
+
+
+
+
 import React, { useState } from "react";
 import bg from "../Assests/bg2.jpg";
 import logo from "../Assests/logo.png";
-import frame from "../Assests/frame.png";
 import icon1 from "../Assests/whatsapp.png";
-import { Button } from 'antd';
-import '../Header/Style2.css'
+import { Button } from "antd";
+import frame from "../Assests/frame.png"
+import "../Header/Style2.css";
 
 function Navbar() {
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    // State for mobile menu visibility
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    // Toggle mobile menu
+    const toggleMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
 
     return (
         <div className="relative w-full bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
             <div className="container mx-auto w-full max-w-[1280px]">
-                <div className="flex items-center justify-between py-4 px-6">
-                    {/* Logo */}
-                    <div className="flex items-center space-x-2">
-                        <img src={logo} className="h-16 md:h-28 " alt="Logo" />
+
+
+                <div className="relative">
+
+                    <div className=" hidden absolute top-0 right-0 py-2 px-4 md:px-6 md:flex items-center space-x-4">
+                        <a
+                            href="https://wa.me/+909876543210"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center space-x-2"
+                        >
+                            <img src={icon1} alt="WhatsApp" className="h-6" />
+                            <span className="text-black">+90-9876543210</span>
+                        </a>
+                        <span className="text-gray-500">/</span>
+                        <span className="text-black">+91-0123456789</span>
                     </div>
 
-
-                    <div className="hidden  md:flex items-center space-x-4">
-
-                        <div className="flex space-x-4 items-center">
-                            <a
-                                href="https://wa.me/+909876543210"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex space-x-2 items-center"
-                            >
-                                <img src={icon1} alt="WhatsApp" className="h-6" />
-                                <span>+90-9876543210</span>
-                            </a>
-                            <span className="text-gray-500">/</span>
-                            <span>+91-0123456789</span>
+                    {/* Main Navbar */}
+                    <div className="flex items-center justify-between py-4 px-6">
+                        {/* Logo */}
+                        <div className="flex items-center space-x-2">
+                            <img src={logo} className="h-16 md:h-28" alt="Logo" />
                         </div>
 
-
-                        {/* Navigation Links */}
-                        <nav className="flex space-x-8">
-                            <a href="#home" className="text-black hover:text-red-800">HOME</a>
-                            <a href="#about" className="text-black hover:text-red-800">ABOUT</a>
-                            <a href="#rooms" className="text-black hover:text-red-800">ROOMS</a>
-                            <a href="#hotel" className="text-black hover:text-red-800">HOTEL</a>
-                            <a href="#pages" className="text-black hover:text-red-800">PAGES</a>
-                            <a href="#contact" className="text-black hover:text-red-800">CONTACT US</a>
+                        {/* Desktop Navigation */}
+                        <nav className="hidden md:flex items-center space-x-8">
+                            <a href="#home" className="text-black hover:text-red-800">
+                                HOME
+                            </a>
+                            <a href="#about" className="text-black hover:text-red-800">
+                                ABOUT
+                            </a>
+                            <a href="#rooms" className="text-black hover:text-red-800">
+                                ROOMS
+                            </a>
+                            <a href="#hotel" className="text-black hover:text-red-800">
+                                HOTEL
+                            </a>
+                            <a href="#pages" className="text-black hover:text-red-800">
+                                PAGES
+                            </a>
+                            <a href="#contact" className="text-black hover:text-red-800">
+                                CONTACT US
+                            </a>
                         </nav>
-                    </div>
 
-                    {/* Mobile Menu Toggle */}
-                    <button
-                        className="md:hidden text-gray-700 focus:outline-none"
-                        onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6"
+                        {/* Mobile Menu Button */}
+                        <button
+                            className="md:hidden text-gray-700 focus:outline-none"
+                            onClick={toggleMenu}
                         >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5"
-                            />
-                        </svg>
-                    </button>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                className="w-6 h-6"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5"
+                                />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
+
+
+
+
 
                 {/* Mobile Menu */}
                 {isMobileMenuOpen && (
-                    <div className="md:hidden flex flex-col space-y-4 px-6 pb-4">
-                        <a href="#home" className="text-black hover:text-red-800">HOME</a>
-                        <a href="#about" className="text-black hover:text-red-800">ABOUT</a>
-                        <a href="#rooms" className="text-black hover:text-red-800">ROOMS</a>
-                        <a href="#hotel" className="text-black hover:text-red-800">HOTEL</a>
-                        <a href="#pages" className="text-black hover:text-red-800">PAGES</a>
-                        <a href="#contact" className="text-black hover:text-red-800">CONTACT US</a>
-                    </div>
+                    <>
+                        {/* Overlay */}
+                        <div
+                            onClick={toggleMenu}
+                            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
+                        ></div>
+
+                        {/* Slide-in Menu */}
+                        <div className="fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 transform transition-transform duration-300">
+                            <div className="flex justify-end p-4">
+                                <button
+                                    onClick={toggleMenu}
+                                    className="text-gray-800 hover:text-red-600 text-3xl font-bold"
+                                >
+                                    &times;
+                                </button>
+                            </div>
+                            <nav>
+                                <a
+                                    href="#home"
+                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+                                >
+                                    Home
+                                </a>
+                                <a
+                                    href="#about"
+                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+                                >
+                                    About
+                                </a>
+                                <a
+                                    href="#rooms"
+                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+                                >
+                                    Rooms
+                                </a>
+                                <a
+                                    href="#hotel"
+                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+                                >
+                                    Hotel
+                                </a>
+                                <a
+                                    href="#pages"
+                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+                                >
+                                    Pages
+                                </a>
+                                <a
+                                    href="#contact"
+                                    className="block px-6 py-4 text-gray-800 hover:bg-amber-800 hover:text-white"
+                                >
+                                    Contact Us
+                                </a>
+                            </nav>
+                        </div>
+                    </>
                 )}
 
 
+                {/* Hero Section */}
                 <div className="flex flex-wrap p-6">
-
-                    <div className="w-full md:w-3/5  font-normal mt-auto mb-auto">
+                    <div className="w-full md:w-3/5 font-normal mt-auto mb-auto">
                         <span className="text-lg font-serif text-amber-800">M A J E S T I C R O O M S</span>
                         <h1 className="font-serif text-[25px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
                             Discover Your Paradise <br />
                             Where You Are
                         </h1>
-                        <p className="font-serif text-amber-950 mt-4 pr-6 ">
+                        <p className="font-serif text-amber-950 mt-4 pr-6">
                             Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
                             tristique velit efficitur, a pulvinar sem hasellus.
                         </p>
 
-                        <Button className="custom-button2 mt-4 mr-5 text-lg font-serif bg-customBrown mb-4">Explore Now</Button>
-
+                        <Button className="custom-button2 mt-4 mr-5 text-lg font-serif bg-customBrown mb-4">
+                            Explore Now
+                        </Button>
                     </div>
 
-
-                     <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
-                        <form style={{ backgroundImage: `url(${frame})` }} className="bg-cover bg-no-repeat  space-y-4 p-6">
-                            <h2 className="text-xl font-Fraunces text-gray-800 text-center">Check Availability</h2>
+                    {/* Availability Form */}
+                    {/* <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
+                        <form style={{ backgroundImage: `url(${frame})` }} className="bg-cover bg-no-repeat space-y-4 p-6">
+                            <h2 className="text-xl font-Fraunces text-gray-800 text-center">
+                                Check Availability
+                            </h2>
                             <div>
                                 <label className="block text-amber-950 mb-1">Check In</label>
                                 <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
@@ -437,17 +965,64 @@ function Navbar() {
                                     <option>3</option>
                                 </select>
                             </div>
-                           
-
-                            <Button className="custom-button3 w-full ">Check Availability</Button>
+                            <Button className="custom-button3 w-full">Check Availability</Button>
                         </form>
-                    </div> 
+                    </div> */}
+
+<div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
+    <form
+        className="bg-cover bg-no-repeat space-y-1 p-7  md:space-y-4 md:p-6 border md:border-none md:"
+        style={{ backgroundImage: `url(${frame})` }}
+    >
+        <h2 className="text-xl font-Fraunces text-gray-800 text-center">
+            Check Availability
+        </h2>
+        <div>
+            <label className="block text-amber-950 mb-1">Check In</label>
+            <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
+                <option>13 October 2024</option>
+                <option>14 October 2024</option>
+                <option>15 October 2024</option>
+            </select>
+        </div>
+        <div>
+            <label className="block text-gray-600 mb-1">Check Out</label>
+            <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                <option>14 October 2024</option>
+                <option>15 October 2024</option>
+                <option>16 October 2024</option>
+            </select>
+        </div>
+        <div>
+            <label className="block text-gray-600 mb-1">Adults</label>
+            <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <div>
+            <label className="block text-gray-600 mb-1">Children</label>
+            <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <Button className="custom-button3 w-full">Check Availability</Button>
+    </form>
+</div>
+
 
 
                 </div>
-            </div>
+            </div >
         </div>
+
+
     );
 }
 
 export default Navbar;
+
+
