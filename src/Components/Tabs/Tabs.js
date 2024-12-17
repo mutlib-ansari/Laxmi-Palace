@@ -20,9 +20,9 @@
 
 //       </div>
 //       <div style={{ backgroundImage: `url(${mask1})` }} className='w-3/5 bg-cover'>
-//         <span className="text-lg font-serif text-amber-800 " >FREQUENTLY ASKED QUESTIONS</span>
-//         <h2 className='font-serif text-[60px] leading-[70px]  text-gray-800s mt-3'>Our Expert Answers</h2>
-//         <p className='font-serif text-amber-950 mt-6 pr-44' >Zenean sed rutrum purus. Nunc nec magna laoreet, sodales nisi at, co rutrum viverra. Nunc nec magna aculis metus libero vehiculaNullam iaculis metus nehicula</p>
+//         <span className="text-lg font-forum text-amber-800 " >FREQUENTLY ASKED QUESTIONS</span>
+//         <h2 className='font-forum text-[60px] leading-[70px]  text-gray-800s mt-3'>Our Expert Answers</h2>
+//         <p className='font-forum text-amber-950 mt-6 pr-44' >Zenean sed rutrum purus. Nunc nec magna laoreet, sodales nisi at, co rutrum viverra. Nunc nec magna aculis metus libero vehiculaNullam iaculis metus nehicula</p>
 //         <div className='w-3/4'>
 //           <Collapse className='mt-5  p-3'
 //             expandIcon={({ isActive }) => (
@@ -36,10 +36,10 @@
 //             items={[
 //               {
 //                 key: '1',
-//                 label: (<h3 className='font-serif text-amber-950'>'What Do You Get For Beverages?'</h3>),
+//                 label: (<h3 className='font-forum text-amber-950'>'What Do You Get For Beverages?'</h3>),
                 
 //                 children: (
-//                   <p className='font-serif text-amber-950'>
+//                   <p className='font-forum text-amber-950'>
 //                     Sed turpis tincidunt id aliquet. Lobortis scelerisque fermentum
 //                     dui faucibus. Convallis tellus id Sed turpis tincidunt id
 //                     aliquet. Lobortis scelerisque fermentum dui faucibus. Convallis
@@ -63,7 +63,7 @@
 //             items={[
 //               {
 //                 key: '1',
-//                 label: (<h3 className='font-serif text-amber-950'>'What Do You Get For Beverages?'</h3>),
+//                 label: (<h3 className='font-forum text-amber-950'>'What Do You Get For Beverages?'</h3>),
 //                 children: (
 //                   <p>
 //                     Sed turpis tincidunt id aliquet. Lobortis scelerisque fermentum
@@ -92,7 +92,7 @@
 //             items={[
 //               {
 //                 key: '1',
-//                 label: (<h3 className='font-serif text-amber-950'>'What Do You Get For Beverages?'</h3>),
+//                 label: (<h3 className='font-forum text-amber-950'>'What Do You Get For Beverages?'</h3>),
 //                 children: (
 //                   <p>
 //                     Sed turpis tincidunt id aliquet. Lobortis scelerisque fermentum
@@ -137,13 +137,13 @@ function Tabs() {
         style={{ backgroundImage: `url(${mask1})` }}
         className="w-full md:w-3/5 bg-cover p-6 md:p-10"
       >
-        <span className="text-sm md:text-lg font-serif text-amber-800 block">
+        <span className="text-sm md:text-lg font-forum text-amber-800 block">
           FREQUENTLY ASKED QUESTIONS
         </span>
-        <h2 className="font-serif text-2xl md:text-5xl leading-tight text-gray-800 mt-3">
+        <h2 className="font-forum text-2xl md:text-5xl leading-tight text-gray-800 mt-3">
           Our Expert Answers
         </h2>
-        <p className="font-serif text-sm md:text-base text-amber-950 mt-6 pr-0 md:pr-16 leading-relaxed">
+        <p className="font-forum text-sm md:text-base text-amber-950 mt-6 pr-0 md:pr-16 leading-relaxed">
           Zenean sed rutrum purus. Nunc nec magna laoreet, sodales nisi at, co
           rutrum viverra. Nunc nec magna aculis metus libero vehiculaNullam
           iaculis metus nehicula
@@ -171,12 +171,12 @@ function Tabs() {
                 {
                   key: '1',
                   label: (
-                    <h3 className="font-serif text-base md:text-lg text-amber-950">
+                    <h3 className="font-forum text-base md:text-lg text-amber-950">
                       {label}
                     </h3>
                   ),
                   children: (
-                    <p className="font-serif text-sm md:text-base text-amber-950">
+                    <p className="font-forum text-sm md:text-base text-amber-950">
                       Sed turpis tincidunt id aliquet. Lobortis scelerisque
                       fermentum dui faucibus. Convallis tellus id Sed turpis
                       tincidunt id aliquet. Lobortis scelerisque fermentum dui

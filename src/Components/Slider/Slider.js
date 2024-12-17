@@ -102,9 +102,9 @@
 //         <div className="w-full h-dvh mx-auto bg-customBeige flex items-stretch">
 //             <div className="self-center">
 //                 <div className="text-center mb-10">
-//                     <span className="text-lg font-serif text-amber-800">What We offer</span>
-//                     <h2 className="font-serif text-[60px] leading-[70px]  text-amber-950">Discover Our Best Facilities</h2>
-//                     <p className="font-serif text-amber-950 mt-4">Ginean sed rutrum purus. Nunc nec magna laoreet, sodales nisi at, co rutrum viverra. Nunc nec magna aculis metus libero vehiculaNullam iaculis metus nehicula</p>
+//                     <span className="text-lg font-forum text-amber-800">What We offer</span>
+//                     <h2 className="font-forum text-[60px] leading-[70px]  text-amber-950">Discover Our Best Facilities</h2>
+//                     <p className="font-forum text-amber-950 mt-4">Ginean sed rutrum purus. Nunc nec magna laoreet, sodales nisi at, co rutrum viverra. Nunc nec magna aculis metus libero vehiculaNullam iaculis metus nehicula</p>
 
 
 //                 </div>
@@ -155,16 +155,16 @@ import img3 from '../Assests/img3.png';
 
 const MySlider = () => {
     return (
-        <div className="w-full h-auto mx-auto bg-customBeige flex flex-col items-center px-4 md:px-0">
+        <div className="w-full h-auto mx-auto bg-customBeige flex flex-col items-center px-4 md:px-0 ">
             {/* Header Section */}
-            <div className="text-center mb-10">
-                <span className="text-sm md:text-lg font-serif text-amber-800 block">
+            <div className="text-center mb-10 p-7">
+                <span className="text-sm md:text-lg font-forum text-amber-800 block">
                     What We Offer
                 </span>
-                <h2 className="font-serif text-2xl md:text-5xl leading-tight text-amber-950 mt-3">
+                <h2 className="font-forum text-2xl md:text-5xl leading-tight text-amber-950 mt-3">
                     Discover Our Best Facilities
                 </h2>
-                <p className="font-serif text-sm md:text-base text-amber-950 mt-4 max-w-2xl mx-auto">
+                <p className="font-forum text-sm md:text-base text-amber-950 mt-4 max-w-2xl mx-auto">
                     Ginean sed rutrum purus. Nunc nec magna laoreet, sodales nisi at, co rutrum viverra. Nunc nec magna aculis metus libero vehiculaNullam iaculis metus nehicula
                 </p>
             </div>
@@ -260,11 +260,11 @@ export default MySlider;
 //       className="bg-cream py-16 px-6 bg-no-repeat bg-left-top"
 //     >
 //       <div className="max-w-6xl mx-auto text-center">
-//         <h2 className="text-lg font-serif text-amber-800">Testimonial</h2>
-//         <h3 className="font-serif text-[60px] leading-[70px] text-amber-950">
+//         <h2 className="text-lg font-forum text-amber-800">Testimonial</h2>
+//         <h3 className="font-forum text-[60px] leading-[70px] text-amber-950">
 //           Happy Customer Thoughts
 //         </h3>
-//         <p className="font-serif text-amber-950 mt-4">
+//         <p className="font-forum text-amber-950 mt-4">
 //           Nunc nec magna acilis metus libero vehiculabibulum inisis metus vehicula. Arenten sed rutrum purus.
 //           Nunc nec magna bottet, vehida et ris, et rutrum viverra.
 //         </p>

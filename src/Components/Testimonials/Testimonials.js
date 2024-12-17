@@ -35,9 +35,9 @@
 //   return (
 //     <section style={{ backgroundImage: `url(${bg})` }}  className="bg-cream py-16 px-6 bg-no-repeat bg-left-top">
 //       <div className="max-w-6xl mx-auto text-center">
-//         <h2 className="text-lg font-serif text-amber-800">Testimonial</h2>
-//         <h3 className="font-serif text-[60px] leading-[70px]  text-amber-950">Happy Customer Thoughts</h3>
-//         <p className="font-serif text-amber-950 mt-4">
+//         <h2 className="text-lg font-forum text-amber-800">Testimonial</h2>
+//         <h3 className="font-forum text-[60px] leading-[70px]  text-amber-950">Happy Customer Thoughts</h3>
+//         <p className="font-forum text-amber-950 mt-4">
 //           Nunc nec magna acilis metus libero vehiculabibulum inisis metus vehicula. Arenten sed rutrum purus. 
 //           Nunc nec magna bottet, vehida et ris, et rutrum viverra.
 //         </p>
@@ -118,14 +118,14 @@ const Testimonials = () => {
   return (
     <section
       style={{ backgroundImage: `url(${bg})` }}
-      className="bg-cream py-16 px-6 bg-no-repeat bg-left-top"
+      className=" bg-customBeige bg-cover  py-16 px-6 bg-no-repeat"
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-lg font-serif text-amber-800">Testimonial</h2>
-        <h3 className="font-serif text-[60px] leading-[70px] text-amber-950">
+        <h2 className="text-lg font-forum text-amber-800">Testimonial</h2>
+        <h3 className="font-forum text-[60px] leading-[70px] text-amber-950">
           Happy Customer Thoughts
         </h3>
-        <p className="font-serif text-amber-950 mt-4">
+        <p className="font-forum text-amber-950 mt-4">
           Nunc nec magna acilis metus libero vehiculabibulum inisis metus vehicula. Arenten sed rutrum purus.
           Nunc nec magna bottet, vehida et ris, et rutrum viverra.
         </p>
@@ -149,7 +149,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <SplideSlide key={testimonial.id}>
               <div className="bg-customBeige shadow-md rounded-lg p-6 flex flex-col items-center">
-                <p className="text-gray-600 mb-4 text-sm text-center">{testimonial.text}</p>
+                <p className="text-gray-600 mb-4 font-forum text-sm text-center">{testimonial.text}</p>
                 <div className="flex items-center space-x-4">
                   <img
                     src={testimonial.image}
@@ -157,8 +157,8 @@ const Testimonials = () => {
                     className="w-16 h-16 rounded-full object-cover"
                   />
                   <div>
-                    <h4 className="text-lg font-bold text-gray-800">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                    <h4 className=" font-forum text-lg font-bold text-gray-800">{testimonial.name}</h4>
+                    <p className=" font-forum text-sm text-gray-500">{testimonial.role}</p>
                   </div>
                 </div>
                 <div className="mt-4 flex space-x-1">

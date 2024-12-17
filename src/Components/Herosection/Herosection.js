@@ -34,13 +34,13 @@
 
 //         <div className='w-1/2 p-10'>
 //           <div >
-//             <span className="text-lg font-serif text-amber-800 mt-3" >COME.STAY.ENJOY</span>
-//             <h1 className='font-serif text-[60px] leading-[70px]  text-gray-800s mt-3'>Find The Best Hotel</h1>
-//             <p className='font-serif text-amber-950 mt-6'>Nunc nec magna laoreet, sodales nisi at, co rutrum viverra. Nunc nec magna aculis metus libero vehiculaNullam iaculis metus nehicula. Aenean sed rutrum purus.</p>
+//             <span className="text-lg font-forum text-amber-800 mt-3" >COME.STAY.ENJOY</span>
+//             <h1 className='font-forum text-[60px] leading-[70px]  text-gray-800s mt-3'>Find The Best Hotel</h1>
+//             <p className='font-forum text-amber-950 mt-6'>Nunc nec magna laoreet, sodales nisi at, co rutrum viverra. Nunc nec magna aculis metus libero vehiculaNullam iaculis metus nehicula. Aenean sed rutrum purus.</p>
 //           </div>
 
 //           <div>
-//             <h2 className=' font-serif text-[30px] leading-[70px]  text-gray-800s mt-3'> Best Hospitality Awards</h2>
+//             <h2 className=' font-forum text-[30px] leading-[70px]  text-gray-800s mt-3'> Best Hospitality Awards</h2>
 //             <ul className='flex mt-3'>
 
 //               <li className='mr-5'><img src={icon1} /></li>
@@ -56,9 +56,9 @@
 //             <div className='w-1/2 pr-14'>
 //               <span className='flex'>
 //                 <img src={svg1} className='h-2/4 pr-3' />
-//                 <h4 className='font-serif text-[20px] leading-[30px]  text-gray-800s'  > Our Mission</h4>
+//                 <h4 className='font-forum text-[20px] leading-[30px]  text-gray-800s'  > Our Mission</h4>
 //               </span>
-//               <p className='font-serif text-amber-950 mt-3'>Aenean sed rutrum purus. Nunc nec magna laoreet, sodaleus bibens ivam.</p>
+//               <p className='font-forum text-amber-950 mt-3'>Aenean sed rutrum purus. Nunc nec magna laoreet, sodaleus bibens ivam.</p>
 
 //             </div>
 
@@ -66,9 +66,9 @@
 //             <div className='w-1/2 pr-14'>
 //               <span className='flex'>
 //                 <img src={svg2} className='h-2/4 pr-3' />
-//                 <h4 className='font-serif text-[20px] leading-[30px]  text-gray-800s'> Our Mission</h4>
+//                 <h4 className='font-forum text-[20px] leading-[30px]  text-gray-800s'> Our Mission</h4>
 //               </span>
-//               <p className='font-serif text-amber-950 mt-3'>Aenean sed rutrum purus. Nunc nec magna laoreet, sodaleus bibens ivam.</p>
+//               <p className='font-forum text-amber-950 mt-3'>Aenean sed rutrum purus. Nunc nec magna laoreet, sodaleus bibens ivam.</p>
 
 //             </div>
 //           </div>
@@ -152,13 +152,13 @@ function Herosection() {
         {/* Right Section - Content */}
         <div className="p-4 md:p-10 space-y-6">
           <div>
-            <span className="text-lg font-serif text-amber-800 block">
+            <span className="text-lg font-forum text-amber-800 block">
               COME.STAY.ENJOY
             </span>
-            <h1 className="font-serif text-2xl sm:text-3xl md:text-5xl leading-tight text-gray-800 mt-3">
+            <h1 className="font-forum text-2xl sm:text-3xl md:text-5xl leading-tight text-gray-800 mt-3">
               Find The Best Hotel
             </h1>
-            <p className="font-serif text-sm sm:text-base md:text-lg text-amber-950 mt-4">
+            <p className="font-forum text-sm sm:text-base md:text-lg text-amber-950 mt-4">
               Nunc nec magna laoreet, sodales nisi at, co rutrum viverra. Nunc
               nec magna aculis metus libero vehiculaNullam iaculis metus
               nehicula. Aenean sed rutrum purus.
@@ -166,7 +166,7 @@ function Herosection() {
           </div>
 
           <div>
-            <h2 className="font-serif text-lg sm:text-xl md:text-3xl leading-tight text-gray-800">
+            <h2 className="font-forum text-lg sm:text-xl md:text-3xl leading-tight text-gray-800">
               Best Hospitality Awards
             </h2>
             <ul className="flex flex-wrap justify-start gap-4 mt-3">
@@ -192,9 +192,9 @@ function Herosection() {
             <div>
               <div className="flex items-center space-x-4">
                 <img src={svg1} alt="SVG 1" className="h-8" />
-                <h4 className="font-serif text-base sm:text-lg text-gray-800">Our Mission</h4>
+                <h4 className="font-forum text-base sm:text-lg text-gray-800">Our Mission</h4>
               </div>
-              <p className="font-serif text-sm sm:text-base text-amber-950 mt-3">
+              <p className="font-forum text-sm sm:text-base text-amber-950 mt-3">
                 Aenean sed rutrum purus. Nunc nec magna laoreet, sodaleus bibens
                 ivam.
               </p>
@@ -203,9 +203,9 @@ function Herosection() {
             <div>
               <div className="flex items-center space-x-4">
                 <img src={svg2} alt="SVG 2" className="h-8" />
-                <h4 className="font-serif text-base sm:text-lg text-gray-800">Our Vision</h4>
+                <h4 className="font-forum text-base sm:text-lg text-gray-800">Our Vision</h4>
               </div>
-              <p className="font-serif text-sm sm:text-base text-amber-950 mt-3">
+              <p className="font-forum text-sm sm:text-base text-amber-950 mt-3">
                 Aenean sed rutrum purus. Nunc nec magna laoreet, sodaleus bibens
                 ivam.
               </p>
