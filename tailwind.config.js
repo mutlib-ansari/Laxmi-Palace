@@ -15,7 +15,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fraunces: ['Fraunces', 'sans-serif'], // Add custom font family
+        forum: ['Forum', 'sans-serif'],
       },
       colors: {
         customBeige: '#FBF6E8',

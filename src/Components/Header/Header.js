@@ -77,12 +77,12 @@
 //                 <div className="flex p-6 ">
 
 //                     <div className="w-3/5 p-6 font-normal mt-auto mb-auto ">
-//                         <span className="text-lg font-serif text-amber-800">M A J E S T I C  R O O M S</span>
-//                         <h1 className="font-serif text-[60px] leading-[70px]  text-gray-800s  ">
+//                         <span className="text-lg font-forum text-amber-800">M A J E S T I C  R O O M S</span>
+//                         <h1 className="font-forum text-[60px] leading-[70px]  text-gray-800s  ">
 //                             Discover Your Paradise  <br />
 //                             Where You Are
 //                         </h1>
-//                         <p className="font-serif text-amber-950 mt-4">
+//                         <p className="font-forum text-amber-950 mt-4">
 //                             Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
 //                             tristique velit efficitur, a pulvinar sem hasellus.
 //                         </p>
@@ -222,14 +222,14 @@
 //         <div className="flex flex-wrap  p-6 space-y-6 md:space-y-0 md:space-x-6">
 //           {/* Left Content */}
 //           <div className="w-full md:w-3/5 p-6 font-normal">
-//             <span className="text-sm md:text-lg font-serif text-amber-800">
+//             <span className="text-sm md:text-lg font-forum text-amber-800">
 //               MAJESTIC ROOMS
 //             </span>
-//             <h1 className="font-serif text-[40px] md:text-[60px] leading-[50px] md:leading-[70px] text-gray-800 mt-4">
+//             <h1 className="font-forum text-[40px] md:text-[60px] leading-[50px] md:leading-[70px] text-gray-800 mt-4">
 //               Discover Your Paradise <br />
 //               Where You Are
 //             </h1>
-//             <p className="font-serif text-amber-950 mt-4 text-sm md:text-base">
+//             <p className="font-forum text-amber-950 mt-4 text-sm md:text-base">
 //               Sed imperdiet dignissim odio dignissim bibendum. Praesent
 //               porttitor tristique velit efficitur, a pulvinar sem hasellus.
 //             </p>
@@ -681,17 +681,17 @@
 //                 <div className="flex flex-wrap p-6">
 
 //                     <div className="w-full md:w-3/5  font-normal mt-auto mb-auto">
-//                         <span className="text-lg font-serif text-amber-800">M A J E S T I C R O O M S</span>
-//                         <h1 className="font-serif text-[25px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
+//                         <span className="text-lg font-forum text-amber-800">M A J E S T I C R O O M S</span>
+//                         <h1 className="font-forum text-[25px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
 //                             Discover Your Paradise <br />
 //                             Where You Are
 //                         </h1>
-//                         <p className="font-serif text-amber-950 mt-4 pr-6 ">
+//                         <p className="font-forum text-amber-950 mt-4 pr-6 ">
 //                             Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
 //                             tristique velit efficitur, a pulvinar sem hasellus.
 //                         </p>
 
-//                         <Button className="custom-button2 mt-4 mr-5 text-lg font-serif bg-customBrown mb-4">Explore Now</Button>
+//                         <Button className="custom-button2 mt-4 mr-5 text-lg font-forum bg-customBrown mb-4">Explore Now</Button>
 
 //                     </div>
 
@@ -757,9 +757,10 @@ import React, { useState } from "react";
 import bg from "../Assests/bg2.jpg";
 import logo from "../Assests/logo.png";
 import icon1 from "../Assests/whatsapp.png";
-import { Button } from "antd";
+import { DatePicker, Button } from "antd";
 import frame from "../Assests/frame.png"
 import "../Header/Style2.css";
+
 
 function Navbar() {
     // State for mobile menu visibility
@@ -912,17 +913,17 @@ function Navbar() {
                 {/* Hero Section */}
                 <div className="flex flex-wrap p-6">
                     <div className="w-full md:w-3/5 font-normal mt-auto mb-auto">
-                        <span className="text-lg font-serif text-amber-800">M A J E S T I C R O O M S</span>
-                        <h1 className="font-serif text-[25px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
+                        <span className="text-lg font-forum text-amber-800">M A J E S T I C R O O M S</span>
+                        <h1 className="font-forum text-[25px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
                             Discover Your Paradise <br />
                             Where You Are
                         </h1>
-                        <p className="font-serif text-amber-950 mt-4 pr-6">
+                        <p className="font-forum text-amber-950 mt-4 pr-6">
                             Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
                             tristique velit efficitur, a pulvinar sem hasellus.
                         </p>
 
-                        <Button className="custom-button2 mt-4 mr-5 text-lg font-serif bg-customBrown mb-4">
+                        <Button className="custom-button2 mt-4 mr-5 text-lg font-forum bg-customBrown mb-4">
                             Explore Now
                         </Button>
                     </div>
@@ -969,49 +970,113 @@ function Navbar() {
                         </form>
                     </div> */}
 
-<div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
-    <form
-        className="bg-cover bg-no-repeat space-y-1 p-7  md:space-y-4 md:p-6 border md:border-none md:"
-        style={{ backgroundImage: `url(${frame})` }}
-    >
-        <h2 className="text-xl font-Fraunces text-gray-800 text-center">
-            Check Availability
-        </h2>
-        <div>
-            <label className="block text-amber-950 mb-1">Check In</label>
-            <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
-                <option>13 October 2024</option>
-                <option>14 October 2024</option>
-                <option>15 October 2024</option>
-            </select>
-        </div>
-        <div>
-            <label className="block text-gray-600 mb-1">Check Out</label>
-            <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                <option>14 October 2024</option>
-                <option>15 October 2024</option>
-                <option>16 October 2024</option>
-            </select>
-        </div>
-        <div>
-            <label className="block text-gray-600 mb-1">Adults</label>
-            <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
-        </div>
-        <div>
-            <label className="block text-gray-600 mb-1">Children</label>
-            <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
-        </div>
-        <Button className="custom-button3 w-full">Check Availability</Button>
-    </form>
-</div>
+                    {/* <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
+                        <form
+                            className="bg-cover bg-no-repeat   md:space-y-4 md:p-6 border md:border-none md:"
+                            style={{ backgroundImage: `url(${frame})` }}
+                        >
+                            <h2 className="text-xl font-Fraunces text-gray-800 text-center">
+                                Check Availability
+                            </h2>
+                            <div>
+                                <label className="block text-amber-950 mb-1">Check In</label>
+                                <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
+                                    <option>13 October 2024</option>
+                                    <option>14 October 2024</option>
+                                    <option>15 October 2024</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="block text-gray-600 mb-1">Check Out</label>
+                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>14 October 2024</option>
+                                    <option>15 October 2024</option>
+                                    <option>16 October 2024</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="block text-gray-600 mb-1">Adults</label>
+                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="block text-gray-600 mb-1">Children</label>
+                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <Button className="custom-button3 w-full">Check Availability</Button>
+                        </form>
+                    </div> */}
+
+
+
+                    <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
+                        <form
+                            className="bg-cover bg-no-repeat md:space-y-4 md:p-6 border md:border-none"
+                            style={{ backgroundImage: `url(${frame})` }}
+                        >
+                            <h2 className="text-xl font-forum text-gray-800 text-center mb-4">
+                                Check Availability
+                            </h2>
+
+                            {/* Check In */}
+                            <div>
+                                <label className="block text-amber-950 mb-1">Check In</label>
+                                <DatePicker
+                                    placeholder="Select Check In Date"
+                                    className="w-full border rounded-md"
+                                    format="DD MMMM YYYY"
+                                />
+                            </div>
+
+                            {/* Check Out */}
+                            <div>
+                                <label className="block text-gray-600 mb-1">Check Out</label>
+                                <DatePicker
+                                    placeholder="Select Check Out Date"
+                                    className="w-full border rounded-md"
+                                    format="DD MMMM YYYY"
+                                />
+                            </div>
+
+                            {/* Adults */}
+                            <div>
+                                <label className="block text-gray-600 mb-1">Adults</label>
+                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+
+                            {/* Children */}
+                            <div>
+                                <label className="block text-gray-600 mb-1">Children</label>
+                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+
+                            {/* Submit Button */}
+                            <Button
+                                type="primary"
+                                htmlType="submit"
+                                className=" custom-button2 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md"
+                            >
+                                Check Availability
+                            </Button>
+                        </form>
+                    </div>
+
+
 
 
 
