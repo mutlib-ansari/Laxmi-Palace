@@ -1027,28 +1027,28 @@ function Navbar() {
 
                             {/* Check In */}
                             <div>
-                                <label className="block text-amber-950 mb-1">Check In</label>
+                                <label className="block text-amber-950 mb-1 font-forum ml-4 md:ml-0">Check In</label>
                                 <DatePicker
                                     placeholder="Select Check In Date"
-                                    className="w-full border rounded-md"
+                                    className="w-5/6 ml-6 md:w-full md:ml-0 items-center border rounded-md"
                                     format="DD MMMM YYYY"
                                 />
                             </div>
 
                             {/* Check Out */}
                             <div>
-                                <label className="block text-gray-600 mb-1">Check Out</label>
+                                <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Check Out</label>
                                 <DatePicker
                                     placeholder="Select Check Out Date"
-                                    className="w-full border rounded-md"
+                                    className="w-5/6 ml-6 md:w-full md:ml-0 border rounded-md"
                                     format="DD MMMM YYYY"
                                 />
                             </div>
 
                             {/* Adults */}
                             <div>
-                                <label className="block text-gray-600 mb-1">Adults</label>
-                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Adults</label>
+                                <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -1057,8 +1057,8 @@ function Navbar() {
 
                             {/* Children */}
                             <div>
-                                <label className="block text-gray-600 mb-1">Children</label>
-                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Children</label>
+                                <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
