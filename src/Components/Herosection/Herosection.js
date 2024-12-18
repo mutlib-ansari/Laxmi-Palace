@@ -101,15 +101,15 @@ import icon4 from "../Assests/icon4.png";
 import icon5 from "../Assests/icon5.png";
 import svg1 from "../Assests/SVG1.png";
 import svg2 from "../Assests/SVG2.png";
-import mask1 from "../Assests/m5.png";
+import mask1 from "../Assests/mask2.png";
 
 function Herosection() {
   return (
     <div
       style={{ backgroundImage: `url(${mask1})` }}
-      className="bg-left-bottom bg-no-repeat bg-cover py-10"
+      className="bg-laft-top bg-no-repeat py-10"
     >
-      <div className="container mx-auto w-full max-w-[1280px] grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+      <div className="container mx-auto w-full max-w-[1280px] grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:pt-24">
         {/* Left Section - Images */}
         {/* <div className="relative flex justify-center items-start flex-wrap gap-4 ">
           <img src={img1} className="w-2/3 sm:w-1/2 md:w-[45%] m-2" alt="Image 1" />
@@ -129,21 +129,21 @@ function Herosection() {
           {/* Image 1 */}
           <img
             src={img1}
-            className="w-2/3 sm:w-1/2 md:w-[45%] m-2 hidden md:block"
+            className="animate-bounceSmooth w-2/3 sm:w-1/2 md:w-[45%] m-2 hidden md:block"
             alt="Image 1"
           />
 
           {/* Image 2 */}
           <img
             src={img2}
-            className="w-2/3 sm:w-1/2 md:w-[45%] m-2 mt-4 md:mt-10 hidden md:block"
+            className="animate-bounceSmooth w-2/3 sm:w-1/2 md:w-[45%] m-2 mt-4 md:mt-10 hidden md:block"
             alt="Image 2"
           />
 
           {/* Mid Logo */}
           <img
             src={mid}
-            className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-10 md:bottom-20 w-1/3 md:w-1/4 hidden md:block"
+            className="animate-rotateRight  absolute top-1/3 left-56 transform -translate-x-1/2 -translate-y-1/2 bottom-10 md:bottom-20 w-1/3 md:w-1/4 hidden md:block"
             alt="Mid Logo"
           />
         </div>
@@ -218,3 +218,40 @@ function Herosection() {
 }
 
 export default Herosection;
+
+
+// import React from "react";
+// import leftImage from "../Assests/with-content-image1.png";
+// import rightImage from "../Assests/with-content-image2.png";
+// import middleImage from "../Assests/mid-logo.png";
+
+// function AnimatedImages() {
+//   return (
+//     <div className="flex justify-center items-center min-h-screen bg-gray-100 relative overflow-hidden">
+//       {/* Left Image - Bouncing */}
+//       <div className="absolute left-10 bottom-1/3 animate-bounceSmooth">
+//         <img src={leftImage} alt="Left Bounce" className="w-32 sm:w-48" />
+//       </div>
+
+//       {/* Middle Image - Rotating */}
+//       <div className="animate-rotateRight">
+//         <img src={middleImage} alt="Middle Rotate" className="w-48 sm:w-64" />
+//       </div>
+
+//       {/* Right Image - Bouncing */}
+//       <div className="absolute right-10 top-1/3 animate-bounceSmooth">
+//         <img src={rightImage} alt="Right Bounce" className="w-32 sm:w-48" />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default AnimatedImages;
+
+
+
+
+
+
+
+
