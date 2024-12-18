@@ -611,7 +611,7 @@ function RoomSelector() {
 
 
                 {/* Tabs */}
-                <div className="flex justify-center space-x-8 mb-6">
+                <div className="flex justify-center md:space-x-5 space-x-5 mb-6">
                     <button
                         onClick={() => setSelectedRoom("royal")}
                         className={`text-lg font-forum ${selectedRoom === "royal"
@@ -621,7 +621,7 @@ function RoomSelector() {
                     >
                         <span className="flex">
                             <img src={home1} className="h-12 hidden md:block " />
-                            <h4 className="font-forum  text-2xl md:text-3xl pt-1 pl-2  ">Royal Room</h4>
+                            <h4 className="font-forum text-lg  md:text-3xl pt-1   ">Royal Room</h4>
                         </span>
                     </button>
                     <button
@@ -633,7 +633,7 @@ function RoomSelector() {
                     >
                         <span className="flex">
                             <img src={home2} className="h-12 hidden md:block " />
-                            <h4 className="font-forum text-2xl md:text-3xl pt-1 pl-2 ">Family Room</h4>
+                            <h4 className="font-forum text-lg md:text-3xl pt-1  ">Family Room</h4>
                         </span>
                     </button>
                     <button
@@ -645,7 +645,7 @@ function RoomSelector() {
                     >
                         <span className="flex ">
                             <img src={home3} className="h-12 hidden md:block" />
-                            <h4 className="font-forum  text-2xl md:text-3xl pt-1 pl-2 ">Family Suites</h4>
+                            <h4 className="font-forum text-lg md:text-3xl pt-1  ">Family Suites</h4>
                         </span>
                     </button>
                 </div>
@@ -653,7 +653,7 @@ function RoomSelector() {
                 {/* Content */}
                 <div className="flex flex-col md:flex-row items-end md:ml-40">
                     {/* Left Content */}
-                    <div className="w-full md:w-1/2 p-6 bg-[#b8735d]  text-white">
+                    <div className="w-full md:w-1/2 p-6 bg-[#b8735d]  text-white order-last md:order-first">
                         <h3 className="text-3xl font-forum mb-4">{currentRoom.title}</h3>
                         <p className=" font-forum mb-6">{currentRoom.description}</p>
                         <div className="grid grid-cols-2 gap-4">
@@ -670,7 +670,7 @@ function RoomSelector() {
                     </div>
 
                     {/* Right Image */}
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 order-first md:order-last  ">
                         <img
                             src={currentRoom.image}
                             alt={currentRoom.title}
