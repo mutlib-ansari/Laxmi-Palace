@@ -155,13 +155,13 @@ import img3 from '../Assests/img3.png';
 
 const MySlider = () => {
     return (
-        <div className="w-full h-auto mx-auto bg-customBeige flex flex-col items-center px-4 md:px-0 ">
+        <div className="w-full h-auto mx-auto bg-customBeige flex flex-col items-center px-4 md:px-0  ">
             {/* Header Section */}
-            <div className="text-center mb-10 p-7">
-                <span className="text-sm md:text-lg font-forum text-amber-800 block">
+            <div className="text-center mb-10 p-7 md:pt-20">
+                <span className="text-sm md:text-lg font-forum  text-amber-800 block">
                     What We Offer
                 </span>
-                <h2 className="font-forum text-2xl md:text-5xl leading-tight text-amber-950 mt-3">
+                <h2 className="font-forum text-2xl md:text-6xl leading-tight text-amber-950 mt-3">
                     Discover Our Best Facilities
                 </h2>
                 <p className="font-forum text-sm md:text-base text-amber-950 mt-4 max-w-2xl mx-auto">
