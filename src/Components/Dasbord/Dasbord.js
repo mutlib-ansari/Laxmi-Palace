@@ -934,7 +934,7 @@ function RoomSelector() {
                 </div>
 
                 {/* Tabs */}
-                <div className="flex justify-center md:space-x-5 space-x-5 py-7">
+                <div className="flex justify-center md:space-x-5  ">
                     <button
                         onClick={() => setSelectedRoom("royal")}
                         className={`text-lg font-forum ${selectedRoom === "royal"
