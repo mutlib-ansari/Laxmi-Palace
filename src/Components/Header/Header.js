@@ -1018,9 +1018,16 @@ function Navbar() {
 
                     <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
                         <form
-                            className="bg-cover bg-no-repeat md:space-y-4 md:p-6 border md:border-none"
+                            className="md:bg-cover md:bg-no-repeat md:space-y-4 md:p-6 border md:border-none bg-transparent  "
                             style={{ backgroundImage: `url(${frame})` }}
                         >
+
+                        {/* <form
+                            className={`md:bg-cover md:bg-no-repeat hidden md:space-y-4 md:p-6 border md:border-none bg-transparent`}
+                            style={{
+                                backgroundImage: window.innerWidth >= 768 ? `url(${frame})` : "none",
+                            }}
+                        > */}
                             <h2 className="text-xl font-forum text-gray-800 text-center mb-4">
                                 Check Availability
                             </h2>
@@ -1069,7 +1076,7 @@ function Navbar() {
                             <Button
                                 type="primary"
                                 htmlType="submit"
-                                className=" custom-button2 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md"
+                                className=" custom-button3 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md"
                             >
                                 Check Availability
                             </Button>

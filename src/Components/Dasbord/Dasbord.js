@@ -536,18 +536,346 @@
 
 
 
-import React, { useState } from "react";
-import { FaTv, FaCocktail, FaHotTub, FaConciergeBell, FaWifi, FaUtensils } from "react-icons/fa"; // Import icons
+// import React, { useState } from "react";
+// import { FaTv, FaCocktail, FaHotTub, FaConciergeBell, FaWifi, FaUtensils } from "react-icons/fa"; // Import icons
+// import royalRoomImage from "../Assests/room1.png";
+// import familyRoomImage from "../Assests/room2.png";
+// import familySuiteImage from "../Assests/room3.png";
+// import home1 from "../Assests/home1.png"
+// import home2 from "../Assests/home2.png"
+// import home3 from "../Assests/home3.png"
+// import { Button } from "antd";
+
+
+// function RoomSelector() {
+//     const [selectedRoom, setSelectedRoom] = useState("royal");
+
+//     // Room Data
+//     const rooms = {
+//         royal: {
+//             title: "Luxury Room",
+//             description:
+//                 "Aenean sed rutrum purus. Nunc nec magna lobortis, sodales blandit mauris et eros mattis dolor rutrum vivamus.",
+//             amenities: [
+//                 { name: "Laundry", icon: <FaConciergeBell /> },
+//                 { name: "Hd Tv", icon: <FaTv /> },
+//                 { name: "Room Drinks", icon: <FaCocktail /> },
+//                 { name: "Air Conditioned", icon: <FaHotTub /> },
+//             ],
+//             image: royalRoomImage,
+//         },
+//         family: {
+//             title: "Family Room",
+//             description:
+//                 "Spacious and comfortable, the family room is perfect for families looking to relax and enjoy their stay.",
+//             amenities: [
+//                 { name: "Laundry", icon: <FaConciergeBell /> },
+//                 { name: "Hd Tv", icon: <FaTv /> },
+//                 { name: "Kitchenette", icon: <FaUtensils /> },
+//                 { name: "Free Wifi", icon: <FaWifi /> },
+//             ],
+//             image: familyRoomImage,
+//         },
+//         suite: {
+//             title: "Family Suite",
+//             description:
+//                 "Enjoy a luxurious experience with our family suites, designed for comfort and relaxation.",
+//             amenities: [
+//                 { name: "Room Service", icon: <FaConciergeBell /> },
+//                 { name: "Jacuzzi", icon: <FaHotTub /> },
+//                 { name: "Hd Tv", icon: <FaTv /> },
+//                 { name: "Mini Bar", icon: <FaCocktail /> },
+//             ],
+//             image: familySuiteImage,
+//         },
+//     };
+
+//     const currentRoom = rooms[selectedRoom];
+
+//     return (
+//         <div className="bg-[#fdf8ee]">
+//             <div className="container mx-auto w-full max-w-[1280px]  py-5">
+//                 <div
+
+//                     className="bg-cover bg-transparent w-full text-center p-6 sm:p-10"
+//                 >
+//                     <span className="text-lg font-forum text-amber-800">DIVINE-ELITE</span>
+//                     <h2 className="font-forum text-3xl sm:text-[60px] sm:leading-[70px] text-gray-800">
+//                         Choose Your Room
+//                     </h2>
+//                     <p className="font-forum text-sm sm:text-lg text-amber-950 mt-4 text-center mx-auto max-w-[600px]">
+//                         Etiam ultrices aliquet dui. Nulla cursus fringilla nibh. Aliquam at leo accumsan, pulvinar
+//                         ipsum porta, tristique velit. Morbi finibus nunc in eleifend hendrerit.
+//                     </p>
+//                 </div>
+
+
+
+//                 {/* Tabs */}
+//                 <div className="flex justify-center md:space-x-5 space-x-5 py-7">
+//                     <button
+//                         onClick={() => setSelectedRoom("royal")}
+//                         className={`text-lg font-forum ${selectedRoom === "royal"
+//                             ? "text-amber-800 font-bold  border-amber-800"
+//                             : "text-gray-500"
+//                             }`}
+//                     >
+//                         <span className="flex">
+
+//                             <h4 className="font-forum   md:text-3xl  py-3 px-3 ">Royal Room</h4>
+//                             <img src={home1} className="h-12 hidden md:block " />
+//                         </span>
+//                     </button>
+//                     <button
+//                         onClick={() => setSelectedRoom("family")}
+//                         className={`text-lg font-forum ${selectedRoom === "family"
+//                             ? "text-amber-800 font-bold  border-amber-800"
+//                             : "text-gray-500"
+//                             }`}
+//                     >
+//                         <span className="flex">
+
+//                             <h4 className="font-forum  md:text-3xl py-3 px-3 ">Family Room</h4>
+//                             <img src={home2} className="h-12 hidden md:block  " />
+//                         </span>
+//                     </button>
+//                     <button
+//                         onClick={() => setSelectedRoom("suite")}
+//                         className={`text-lg font-forum ${selectedRoom === "suite"
+//                             ? "text-amber-800 font-bold  border-amber-800"
+//                             : "text-gray-500"
+//                             }`}
+//                     >
+//                         <span className="flex ">
+
+//                             <h4 className="font-forum  md:text-3xl py-3 px-3 ">Family Suites</h4>
+//                             <img src={home3} className="h-12 hidden md:block  " />
+
+//                         </span>
+//                     </button>
+//                 </div>
+
+//                 {/* Content */}
+//                 <div className="flex flex-col md:flex-row items-end md:ml-10 ">
+//                     {/* Left Content */}
+//                     <div className="w-full md:w-1/2 p-12 bg-[#3d3931]  text-white order-last md:order-first md:rounded-l-3xl">
+//                             <span className="text-[#9b804e]">WHY WE ARE BEST</span>
+//                         <h3 className="text-7xl font-forum mb-4">{currentRoom.title}</h3>
+//                         <p className=" font-forum mb-6">{currentRoom.description}</p>
+//                         <div className="grid grid-cols-2 gap-4">
+//                             {currentRoom.amenities.map((amenity, index) => (
+//                                 <div key={index} className="flex items-center gap-2">
+//                                     <span className="text-xl text-[#9b804e]">{amenity.icon}</span>
+//                                     <span className="font-forum text-lg">{amenity.name}</span>
+//                                 </div>
+//                             ))}
+//                             <Button className="custom-button4 md:p-2 text-sm sm:text-base md:text-lg font-forum">
+//                                 Book Now
+//                             </Button>
+//                         </div>
+//                     </div>
+
+//                     {/* Right Image */}
+//                     <div className="w-full md:w-1/2 order-first md:order-last md:rounded-r-3xl ">
+//                         <img
+//                             src={currentRoom.image}
+//                             alt={currentRoom.title}
+//                             className="md:h-[418px] md:rounded-r-3xl shadow-lg"
+//                         />
+//                     </div>
+
+//                 </div>
+
+
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default RoomSelector;
+
+
+
+
+
+// import React, { useState, useEffect } from "react";
+// import { FaTv, FaCocktail, FaHotTub, FaConciergeBell, FaWifi, FaUtensils } from "react-icons/fa"; // Import icons
+// import royalRoomImage from "../Assests/room1.png";
+// import familyRoomImage from "../Assests/room2.png";
+// import familySuiteImage from "../Assests/room3.png";
+// import home1 from "../Assests/home1.png";
+// import home2 from "../Assests/home2.png";
+// import home3 from "../Assests/home3.png";
+// import { Button } from "antd";
+
+// function RoomSelector() {
+//     const [selectedRoom, setSelectedRoom] = useState("royal");
+//     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+//     const sliderImages = [royalRoomImage, familyRoomImage, familySuiteImage];
+
+//     useEffect(() => {
+//         const interval = setInterval(() => {
+//             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
+//         }, 3000); // Change image every 3 seconds
+//         return () => clearInterval(interval);
+//     }, [sliderImages.length]);
+
+//     // Room Data
+//     const rooms = {
+//         royal: {
+//             title: "Luxury Room",
+//             description:
+//                 "Aenean sed rutrum purus. Nunc nec magna lobortis, sodales blandit mauris et eros mattis dolor rutrum vivamus.",
+//             amenities: [
+//                 { name: "Laundry", icon: <FaConciergeBell /> },
+//                 { name: "Hd Tv", icon: <FaTv /> },
+//                 { name: "Room Drinks", icon: <FaCocktail /> },
+//                 { name: "Air Conditioned", icon: <FaHotTub /> },
+//             ],
+//             image: royalRoomImage,
+//         },
+//         family: {
+//             title: "Family Room",
+//             description:
+//                 "Spacious and comfortable, the family room is perfect for families looking to relax and enjoy their stay.",
+//             amenities: [
+//                 { name: "Laundry", icon: <FaConciergeBell /> },
+//                 { name: "Hd Tv", icon: <FaTv /> },
+//                 { name: "Kitchenette", icon: <FaUtensils /> },
+//                 { name: "Free Wifi", icon: <FaWifi /> },
+//             ],
+//             image: familyRoomImage,
+//         },
+//         suite: {
+//             title: "Family Suite",
+//             description:
+//                 "Enjoy a luxurious experience with our family suites, designed for comfort and relaxation.",
+//             amenities: [
+//                 { name: "Room Service", icon: <FaConciergeBell /> },
+//                 { name: "Jacuzzi", icon: <FaHotTub /> },
+//                 { name: "Hd Tv", icon: <FaTv /> },
+//                 { name: "Mini Bar", icon: <FaCocktail /> },
+//             ],
+//             image: familySuiteImage,
+//         },
+//     };
+
+//     const currentRoom = rooms[selectedRoom];
+
+//     return (
+//         <div className="bg-[#fdf8ee]">
+//             <div className="container mx-auto w-full max-w-[1280px]  py-5">
+//                 <div className="bg-cover bg-transparent w-full text-center p-6 sm:p-10">
+//                     <span className="text-lg font-forum text-amber-800">DIVINE-ELITE</span>
+//                     <h2 className="font-forum text-3xl sm:text-[60px] sm:leading-[70px] text-gray-800">
+//                         Choose Your Room
+//                     </h2>
+//                     <p className="font-forum text-sm sm:text-lg text-amber-950 mt-4 text-center mx-auto max-w-[600px]">
+//                         Etiam ultrices aliquet dui. Nulla cursus fringilla nibh. Aliquam at leo accumsan, pulvinar
+//                         ipsum porta, tristique velit. Morbi finibus nunc in eleifend hendrerit.
+//                     </p>
+//                 </div>
+
+//                 {/* Tabs */}
+//                 <div className="flex justify-center md:space-x-5 space-x-5 py-7">
+//                     <button
+//                         onClick={() => setSelectedRoom("royal")}
+//                         className={`text-lg font-forum ${selectedRoom === "royal"
+//                             ? "text-amber-800 font-bold  border-amber-800"
+//                             : "text-gray-500"
+//                             }`}
+//                     >
+//                         <span className="flex">
+//                             <h4 className="font-forum md:text-3xl py-3 px-3 ">Royal Room</h4>
+//                             <img src={home1} className="h-12 hidden md:block " />
+//                         </span>
+//                     </button>
+//                     <button
+//                         onClick={() => setSelectedRoom("family")}
+//                         className={`text-lg font-forum ${selectedRoom === "family"
+//                             ? "text-amber-800 font-bold  border-amber-800"
+//                             : "text-gray-500"
+//                             }`}
+//                     >
+//                         <span className="flex">
+//                             <h4 className="font-forum md:text-3xl py-3 px-3 ">Family Room</h4>
+//                             <img src={home2} className="h-12 hidden md:block  " />
+//                         </span>
+//                     </button>
+//                     <button
+//                         onClick={() => setSelectedRoom("suite")}
+//                         className={`text-lg font-forum ${selectedRoom === "suite"
+//                             ? "text-amber-800 font-bold  border-amber-800"
+//                             : "text-gray-500"
+//                             }`}
+//                     >
+//                         <span className="flex ">
+//                             <h4 className="font-forum md:text-3xl py-3 px-3 ">Family Suites</h4>
+//                             <img src={home3} className="h-12 hidden md:block  " />
+//                         </span>
+//                     </button>
+//                 </div>
+
+//                 {/* Content */}
+//                 <div className="flex flex-col md:flex-row items-end md:ml-10">
+//                     {/* Left Content */}
+//                     <div className="w-full md:w-1/2 p-12 bg-[#3d3931] text-white order-last md:order-first md:rounded-l-3xl">
+//                         <span className="text-[#9b804e]">WHY WE ARE BEST</span>
+//                         <h3 className="text-7xl font-forum mb-4">{currentRoom.title}</h3>
+//                         <p className="font-forum mb-6">{currentRoom.description}</p>
+//                         <div className="grid grid-cols-2 gap-4">
+//                             {currentRoom.amenities.map((amenity, index) => (
+//                                 <div key={index} className="flex items-center gap-2">
+//                                     <span className="text-xl text-[#9b804e]">{amenity.icon}</span>
+//                                     <span className="font-forum text-lg">{amenity.name}</span>
+//                                 </div>
+//                             ))}
+//                             <Button className="custom-button4 md:p-2 text-sm sm:text-base md:text-lg font-forum">
+//                                 Book Now
+//                             </Button>
+//                         </div>
+//                     </div>
+
+//                     {/* Right Image (Auto Slider) */}
+//                     <div className="w-full md:w-1/2 order-first md:order-last md:rounded-r-3xl">
+//                         <img
+//                             src={sliderImages[currentImageIndex]}
+//                             alt={`Slide ${currentImageIndex + 1}`}
+//                             className="md:h-[418px] md:rounded-r-3xl shadow-lg"
+//                         />
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default RoomSelector;
+
+
+import React, { useState, useEffect } from "react";
+import { FaTv, FaCocktail, FaHotTub, FaConciergeBell, FaWifi, FaUtensils } from "react-icons/fa";
 import royalRoomImage from "../Assests/room1.png";
 import familyRoomImage from "../Assests/room2.png";
 import familySuiteImage from "../Assests/room3.png";
-import home1 from "../Assests/home1.png"
-import home2 from "../Assests/home2.png"
-import home3 from "../Assests/home3.png"
+import home1 from "../Assests/home1.png";
+import home2 from "../Assests/home2.png";
+import home3 from "../Assests/home3.png";
 import { Button } from "antd";
 
 function RoomSelector() {
     const [selectedRoom, setSelectedRoom] = useState("royal");
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const sliderImages = [royalRoomImage, familyRoomImage, familySuiteImage];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
+        }, 3000); // Change image every 3 seconds
+        return () => clearInterval(interval);
+    }, [sliderImages.length]);
 
     // Room Data
     const rooms = {
@@ -593,11 +921,8 @@ function RoomSelector() {
 
     return (
         <div className="bg-[#fdf8ee]">
-            <div className="container mx-auto max-w-7xl px-6 py-10">
-                <div
-
-                    className="bg-cover bg-transparent w-full text-center p-6 sm:p-10"
-                >
+            <div className="container mx-auto w-full max-w-[1280px] py-5">
+                <div className="bg-cover bg-transparent w-full text-center p-6 sm:p-10">
                     <span className="text-lg font-forum text-amber-800">DIVINE-ELITE</span>
                     <h2 className="font-forum text-3xl sm:text-[60px] sm:leading-[70px] text-gray-800">
                         Choose Your Room
@@ -608,10 +933,8 @@ function RoomSelector() {
                     </p>
                 </div>
 
-
-
                 {/* Tabs */}
-                <div className="flex justify-center md:space-x-5  mb-6">
+                <div className="flex justify-center md:space-x-5 space-x-5 py-7">
                     <button
                         onClick={() => setSelectedRoom("royal")}
                         className={`text-lg font-forum ${selectedRoom === "royal"
@@ -620,8 +943,8 @@ function RoomSelector() {
                             }`}
                     >
                         <span className="flex">
+                            <h4 className="font-forum md:text-3xl py-3 px-3 ">Royal Room</h4>
                             <img src={home1} className="h-12 hidden md:block " />
-                            <h4 className="font-forum   md:text-3xl pt-1   ">Royal Room</h4>
                         </span>
                     </button>
                     <button
@@ -632,8 +955,8 @@ function RoomSelector() {
                             }`}
                     >
                         <span className="flex">
-                            <img src={home2} className="h-12 hidden md:block " />
-                            <h4 className="font-forum  md:text-3xl pt-1  ">Family Room</h4>
+                            <h4 className="font-forum md:text-3xl py-3 px-3 ">Family Room</h4>
+                            <img src={home2} className="h-12 hidden md:block  " />
                         </span>
                     </button>
                     <button
@@ -644,50 +967,49 @@ function RoomSelector() {
                             }`}
                     >
                         <span className="flex ">
-                            <img src={home3} className="h-12 hidden md:block" />
-                            <h4 className="font-forum  md:text-3xl pt-1  ">Family Suites</h4>
+                            <h4 className="font-forum md:text-3xl py-3 px-3 ">Family Suites</h4>
+                            <img src={home3} className="h-12 hidden md:block  " />
                         </span>
                     </button>
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col md:flex-row items-end md:ml-40">
+                <div className="flex flex-col md:flex-row items-end md:ml-10">
                     {/* Left Content */}
-                    <div className="w-full md:w-1/2 p-6 bg-[#b8735d]  text-white order-last md:order-first">
-                        <h3 className="text-3xl font-forum mb-4">{currentRoom.title}</h3>
-                        <p className=" font-forum mb-6">{currentRoom.description}</p>
+                    <div className="w-full md:w-1/2 p-12 bg-[#3d3931] text-white order-last md:order-first md:rounded-l-3xl">
+                        <span className="text-[#9b804e]">WHY WE ARE BEST</span>
+                        <h3 className="md:text-7xl text-4xl font-forum mb-4">{currentRoom.title}</h3>
+                        <p className="font-forum mb-6">{currentRoom.description}</p>
                         <div className="grid grid-cols-2 gap-4">
                             {currentRoom.amenities.map((amenity, index) => (
                                 <div key={index} className="flex items-center gap-2">
-                                    <span className="text-xl">{amenity.icon}</span>
+                                    <span className="text-xl text-[#9b804e]">{amenity.icon}</span>
                                     <span className="font-forum text-lg">{amenity.name}</span>
                                 </div>
                             ))}
-                            <Button className="custom-button md:p-2 text-sm sm:text-base md:text-lg font-forum">
+                            <Button className="custom-button4 md:p-2 text-sm sm:text-base md:text-lg font-forum">
                                 Book Now
                             </Button>
                         </div>
                     </div>
 
-                    {/* Right Image */}
-                    <div className="w-full md:w-1/2 order-first md:order-last  ">
+                     {/* Right Image  */}
+                     <div className="w-full md:w-1/2 order-first md:order-last md:rounded-r-3xl">
                         <img
-                            src={currentRoom.image}
-                            alt={currentRoom.title}
-                            className="md:h-[310px]  shadow-lg"
+                            src={currentImageIndex === 0 ? currentRoom.image : sliderImages[currentImageIndex]}
+                            alt={currentImageIndex === 0 ? currentRoom.title : `Slide ${currentImageIndex + 1}`}
+                            className="md:h-[418px] md:rounded-r-3xl shadow-lg"
                         />
                     </div>
 
+                    
+                    </div>
                 </div>
-
-
             </div>
-        </div>
-    );
+            );
 }
 
-export default RoomSelector;
-
+            export default RoomSelector;
 
 
 
