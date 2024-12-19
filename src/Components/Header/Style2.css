@@ -1,12 +1,13 @@
 .custom-button2 {
     background-color: Brown  !important; /* Default background color */
     color: #fff  !important;
-    padding: 10px 20px;
+    padding: 10px 20px 40px 20px !important;
     border: none !important;
     margin-right: 20px !important;
-    padding: 25px !important;
+    
     padding-right: 30px !important;
     border-radius: 0% !important;
+    
   }
 
   .custom-button2:hover {
