@@ -863,6 +863,7 @@ import home1 from "../Assests/home1.png";
 import home2 from "../Assests/home2.png";
 import home3 from "../Assests/home3.png";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 
 function RoomSelector() {
     const [selectedRoom, setSelectedRoom] = useState("royal");
@@ -942,10 +943,10 @@ function RoomSelector() {
                             : "text-gray-500"
                             }`}
                     >
-                        <span className="flex">
+                       <Link to="/Royalroom"> <span className="flex">
                             <h4 className="font-forum md:text-3xl py-3 px-3 ">Royal Room</h4>
                             <img src={home1} className="h-12 hidden md:block " />
-                        </span>
+                        </span></Link>
                     </button>
                     <button
                         onClick={() => setSelectedRoom("family")}

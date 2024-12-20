@@ -755,8 +755,8 @@
 
 import React, { useState } from "react";
 import bg from "../Assests/bg2.jpg";
-import logo from "../Assests/logo.png";
-import icon1 from "../Assests/whatsapp.png";
+// import logo from "../Assests/logo.png";
+// import icon1 from "../Assests/whatsapp.png";
 import { DatePicker, Button } from "antd";
 import frame from "../Assests/frame.png"
 import "../Header/Style2.css";
@@ -764,19 +764,19 @@ import "../Header/Style2.css";
 
 function Navbar() {
     // State for mobile menu visibility
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     // Toggle mobile menu
-    const toggleMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+    // const toggleMenu = () => {
+    //     setIsMobileMenuOpen(!isMobileMenuOpen);
+    // };
 
     return (
         <div className="relative w-full bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
-            <div className="container mx-auto w-full max-w-[1280px]">
+            <div className="container mx-auto w-full max-w-[1280px]   md:pt-52">
 
 
-                <div className="relative">
+                {/* <div className="relative">
 
                     <div className=" hidden absolute top-0 right-0 py-2 px-4 md:px-6 md:flex items-center space-x-4">
                         <a
@@ -792,14 +792,14 @@ function Navbar() {
                         <span className="text-black">+91-0123456789</span>
                     </div>
 
-                    {/* Main Navbar */}
+                    
                     <div className=" bg-white md:bg-transparent flex items-center justify-between py-4 px-6">
-                        {/* Logo */}
+                     
                         <div className="flex items-center space-x-2">
                             <img src={logo} className="h-16 md:h-28" alt="Logo" />
                         </div>
 
-                        {/* Desktop Navigation */}
+                        
                         <nav className="hidden md:flex items-center space-x-8">
                             <a href="#home" className="text-black hover:text-red-800">
                                 HOME
@@ -821,7 +821,7 @@ function Navbar() {
                             </a>
                         </nav>
 
-                        {/* Mobile Menu Button */}
+                        
                         <button
                             className="md:hidden text-gray-700 focus:outline-none"
                             onClick={toggleMenu}
@@ -848,16 +848,16 @@ function Navbar() {
 
 
 
-                {/* Mobile Menu */}
+                
                 {isMobileMenuOpen && (
                     <>
-                        {/* Overlay */}
+                        
                         <div
                             onClick={toggleMenu}
                             className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
                         ></div>
 
-                        {/* Slide-in Menu */}
+                       
                         <div className="fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 transform transition-transform duration-300">
                             <div className="flex justify-end p-4">
                                 <button
@@ -907,7 +907,7 @@ function Navbar() {
                             </nav>
                         </div>
                     </>
-                )}
+                )} */}
 
 
                 {/* Hero Section */}
@@ -1018,9 +1018,17 @@ function Navbar() {
 
                     <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
                         <form
-                            className="md:bg-cover md:bg-no-repeat md:space-y-4 md:p-6 border md:border-none bg-transparent  "
-                            style={{ backgroundImage: `url(${frame})` }}
+                            className="md:space-y-4 md:p-6 border md:border-none bg-transparent bg-cover bg-no-repeat"
+                            style={{
+                                backgroundImage: `url(${frame})`, // Add your background image
+                                backgroundPosition: 'center, left top', // First image centered, second image top-left
+                                backgroundSize: 'cover', // First image covers, second image half width & full height
+                                backgroundRepeat: 'no-repeat, no-repeat', // Prevent repeating for both
+                            }}
+                            hidden={window.innerWidth < 768} // Hide on small screens
                         >
+                            {/* Form content here */}
+                        
 
                         {/* <form
                             className={`md:bg-cover md:bg-no-repeat hidden md:space-y-4 md:p-6 border md:border-none bg-transparent`}
@@ -1028,68 +1036,68 @@ function Navbar() {
                                 backgroundImage: window.innerWidth >= 768 ? `url(${frame})` : "none",
                             }}
                         > */}
-                            <h2 className="text-xl font-forum text-gray-800 text-center mb-4">
-                                Check Availability
-                            </h2>
+                        <h2 className="text-xl font-forum text-gray-800 text-center mb-4">
+                            Check Availability
+                        </h2>
 
-                            {/* Check In */}
-                            <div>
-                                <label className="block text-amber-950 mb-1 font-forum ml-4 md:ml-0">Check In</label>
-                                <DatePicker
-                                    placeholder="Select Check In Date"
-                                    className="w-5/6 ml-6 md:w-full md:ml-0 items-center border rounded-md"
-                                    format="DD MMMM YYYY"
-                                />
-                            </div>
+                        {/* Check In */}
+                        <div>
+                            <label className="block text-amber-950 mb-1 font-forum ml-4 md:ml-0">Check In</label>
+                            <DatePicker
+                                placeholder="Select Check In Date"
+                                className="w-5/6 ml-6 md:w-full md:ml-0 items-center border rounded-md"
+                                format="DD MMMM YYYY"
+                            />
+                        </div>
 
-                            {/* Check Out */}
-                            <div>
-                                <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Check Out</label>
-                                <DatePicker
-                                    placeholder="Select Check Out Date"
-                                    className="w-5/6 ml-6 md:w-full md:ml-0 border rounded-md"
-                                    format="DD MMMM YYYY"
-                                />
-                            </div>
+                        {/* Check Out */}
+                        <div>
+                            <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Check Out</label>
+                            <DatePicker
+                                placeholder="Select Check Out Date"
+                                className="w-5/6 ml-6 md:w-full md:ml-0 border rounded-md"
+                                format="DD MMMM YYYY"
+                            />
+                        </div>
 
-                            {/* Adults */}
-                            <div>
-                                <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Adults</label>
-                                <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
+                        {/* Adults */}
+                        <div>
+                            <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Adults</label>
+                            <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
 
-                            {/* Children */}
-                            <div>
-                                <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Children</label>
-                                <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
+                        {/* Children */}
+                        <div>
+                            <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Children</label>
+                            <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
 
-                            {/* Submit Button */}
-                            <Button
-                                type="primary"
-                                htmlType="submit"
-                                className=" custom-button3 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md"
-                            >
-                                Check Availability
-                            </Button>
-                        </form>
-                    </div>
-
-
-
-
-
+                        {/* Submit Button */}
+                        <Button
+                            type="primary"
+                            htmlType="submit"
+                            className=" custom-button3 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md"
+                        >
+                            Check Availability
+                        </Button>
+                    </form>
                 </div>
-            </div >
-        </div>
+
+
+
+
+
+            </div>
+        </div >
+        </div >
 
 
     );

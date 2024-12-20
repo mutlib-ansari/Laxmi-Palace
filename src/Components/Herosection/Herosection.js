@@ -106,10 +106,18 @@ import mask1 from "../Assests/mask2.png";
 function Herosection() {
   return (
     <div
-      style={{ backgroundImage: `url(${mask1})` }}
-      className="bg-laft-top bg-no-repeat py-10"
+      //   style={{ backgroundImage: `url(${mask1})` }}
+      //   className="bg-laft-top bg-no-repeat py-10 "
+      // >
+      style={{
+        backgroundImage: `url(${mask1})`,
+        backgroundPosition: 'right-top', // Align to the top-left
+        backgroundSize: '50%', // Cover half the width and full height
+        backgroundRepeat: 'no-repeat', // Prevent repeating
+      }}
+      className="py-10  w-full"
     >
-      <div className="container mx-auto w-full max-w-[1280px] grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:pt-24">
+      <div className="container mx-auto right-0 w-full max-w-[1280px] grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:pt-24">
         {/* Left Section - Images */}
         {/* <div className="relative flex justify-center items-start flex-wrap gap-4 ">
           <img src={img1} className="w-2/3 sm:w-1/2 md:w-[45%] m-2" alt="Image 1" />
