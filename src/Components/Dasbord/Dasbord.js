@@ -943,10 +943,10 @@ function RoomSelector() {
                             : "text-gray-500"
                             }`}
                     >
-                       <Link to="/Royalroom"> <span className="flex">
+                        <span className="flex">
                             <h4 className="font-forum md:text-3xl py-3 px-3 ">Royal Room</h4>
                             <img src={home1} className="h-12 hidden md:block " />
-                        </span></Link>
+                        </span>
                     </button>
                     <button
                         onClick={() => setSelectedRoom("family")}
@@ -988,9 +988,9 @@ function RoomSelector() {
                                     <span className="font-forum text-lg">{amenity.name}</span>
                                 </div>
                             ))}
-                            <Button className="custom-button4 md:p-2 text-sm sm:text-base md:text-lg font-forum">
+                            <Link to="/Royalroom"><Button className="custom-button4 md:p-2 text-sm sm:text-base md:text-lg font-forum">
                                 Book Now
-                            </Button>
+                            </Button></Link>
                         </div>
                     </div>
 

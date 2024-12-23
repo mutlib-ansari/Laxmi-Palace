@@ -753,13 +753,379 @@
 
 
 
+// import React, { useState } from "react";
+// import bg from "../Assests/bg2.jpg";
+// // import logo from "../Assests/logo.png";
+// // import icon1 from "../Assests/whatsapp.png";
+// import { DatePicker, Button } from "antd";
+// import frame from "../Assests/frame.png"
+// import "../Header/Style2.css";
+// import myvideo from "../Assests/video1.mp4"
+
+
+// function Navbar() {
+//     // State for mobile menu visibility
+//     // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+//     // Toggle mobile menu
+//     // const toggleMenu = () => {
+//     //     setIsMobileMenuOpen(!isMobileMenuOpen);
+//     // };
+
+//     return (
+//         <div className="relative w-full bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
+//             <div className="w-full">
+//                 {/* Background video */}
+
+//                 <div className="container mx-auto w-full max-w-[1280px]   md:pt-52">
+//                     <video
+//                     className="absolute top-0 left-0 w-full h-full object-cover"
+//                     src={myvideo} // Replace with your video path
+//                     autoPlay
+//                     loop
+//                     muted
+//                     playsInline
+//                 />
+
+
+//                     {/* <div className="relative">
+
+//                     <div className=" hidden absolute top-0 right-0 py-2 px-4 md:px-6 md:flex items-center space-x-4">
+//                         <a
+//                             href="https://wa.me/+909876543210"
+//                             target="_blank"
+//                             rel="noopener noreferrer"
+//                             className="flex items-center space-x-2"
+//                         >
+//                             <img src={icon1} alt="WhatsApp" className="h-6" />
+//                             <span className="text-black">+90-9876543210</span>
+//                         </a>
+//                         <span className="text-gray-500">/</span>
+//                         <span className="text-black">+91-0123456789</span>
+//                     </div>
+
+                    
+//                     <div className=" bg-white md:bg-transparent flex items-center justify-between py-4 px-6">
+                     
+//                         <div className="flex items-center space-x-2">
+//                             <img src={logo} className="h-16 md:h-28" alt="Logo" />
+//                         </div>
+
+                        
+//                         <nav className="hidden md:flex items-center space-x-8">
+//                             <a href="#home" className="text-black hover:text-red-800">
+//                                 HOME
+//                             </a>
+//                             <a href="#about" className="text-black hover:text-red-800">
+//                                 ABOUT
+//                             </a>
+//                             <a href="#rooms" className="text-black hover:text-red-800">
+//                                 ROOMS
+//                             </a>
+//                             <a href="#hotel" className="text-black hover:text-red-800">
+//                                 HOTEL
+//                             </a>
+//                             <a href="#pages" className="text-black hover:text-red-800">
+//                                 PAGES
+//                             </a>
+//                             <a href="#contact" className="text-black hover:text-red-800">
+//                                 CONTACT US
+//                             </a>
+//                         </nav>
+
+                        
+//                         <button
+//                             className="md:hidden text-gray-700 focus:outline-none"
+//                             onClick={toggleMenu}
+//                         >
+//                             <svg
+//                                 xmlns="http://www.w3.org/2000/svg"
+//                                 fill="none"
+//                                 viewBox="0 0 24 24"
+//                                 strokeWidth={1.5}
+//                                 stroke="currentColor"
+//                                 className="w-6 h-6"
+//                             >
+//                                 <path
+//                                     strokeLinecap="round"
+//                                     strokeLinejoin="round"
+//                                     d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5"
+//                                 />
+//                             </svg>
+//                         </button>
+//                     </div>
+//                 </div>
+
+
+
+
+
+                
+//                 {isMobileMenuOpen && (
+//                     <>
+                        
+//                         <div
+//                             onClick={toggleMenu}
+//                             className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
+//                         ></div>
+
+                       
+//                         <div className="fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 transform transition-transform duration-300">
+//                             <div className="flex justify-end p-4">
+//                                 <button
+//                                     onClick={toggleMenu}
+//                                     className="text-gray-800 hover:text-red-600 text-3xl font-bold"
+//                                 >
+//                                     &times;
+//                                 </button>
+//                             </div>
+//                             <nav>
+//                                 <a
+//                                     href="#home"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Home
+//                                 </a>
+//                                 <a
+//                                     href="#about"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     About
+//                                 </a>
+//                                 <a
+//                                     href="#rooms"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Rooms
+//                                 </a>
+//                                 <a
+//                                     href="#hotel"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Hotel
+//                                 </a>
+//                                 <a
+//                                     href="#pages"
+//                                     className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Pages
+//                                 </a>
+//                                 <a
+//                                     href="#contact"
+//                                     className="block px-6 py-4 text-gray-800 hover:bg-amber-800 hover:text-white"
+//                                 >
+//                                     Contact Us
+//                                 </a>
+//                             </nav>
+//                         </div>
+//                     </>
+//                 )} */}
+
+
+//                     {/* Hero Section */}
+//                     <div className="flex p-6">
+//                         <div className="w-full md:w-3/5 font-normal mt-auto mb-auto pt-4 pb-5">
+//                             <span className="text-lg font-forum text-amber-800">M A J E S T I C R O O M S</span>
+//                             <h1 className="font-forum text-[40px]  md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
+//                                 Discover Your Paradise <br />
+//                                 Where You Are
+//                             </h1>
+//                             <p className=" hidden md:block font-forum text-amber-950 mt-4 pr-6">
+//                                 Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
+//                                 tristique velit efficitur, a pulvinar sem hasellus.
+//                             </p>
+
+//                             <Button className="custom-button2 hidden md:block mt-4 mr-5 text-lg font-forum bg-customBrown mb-4">
+//                                 Explore Now
+//                             </Button>
+//                         </div>
+
+//                         {/* Availability Form */}
+//                         {/* <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
+//                         <form style={{ backgroundImage: `url(${frame})` }} className="bg-cover bg-no-repeat space-y-4 p-6">
+//                             <h2 className="text-xl font-Fraunces text-gray-800 text-center">
+//                                 Check Availability
+//                             </h2>
+//                             <div>
+//                                 <label className="block text-amber-950 mb-1">Check In</label>
+//                                 <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
+//                                     <option>13 October 2024</option>
+//                                     <option>14 October 2024</option>
+//                                     <option>15 October 2024</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Check Out</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>14 October 2024</option>
+//                                     <option>15 October 2024</option>
+//                                     <option>16 October 2024</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Adults</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>1</option>
+//                                     <option>2</option>
+//                                     <option>3</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Children</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>1</option>
+//                                     <option>2</option>
+//                                     <option>3</option>
+//                                 </select>
+//                             </div>
+//                             <Button className="custom-button3 w-full">Check Availability</Button>
+//                         </form>
+//                     </div> */}
+
+//                         {/* <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
+//                         <form
+//                             className="bg-cover bg-no-repeat   md:space-y-4 md:p-6 border md:border-none md:"
+//                             style={{ backgroundImage: `url(${frame})` }}
+//                         >
+//                             <h2 className="text-xl font-Fraunces text-gray-800 text-center">
+//                                 Check Availability
+//                             </h2>
+//                             <div>
+//                                 <label className="block text-amber-950 mb-1">Check In</label>
+//                                 <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
+//                                     <option>13 October 2024</option>
+//                                     <option>14 October 2024</option>
+//                                     <option>15 October 2024</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Check Out</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>14 October 2024</option>
+//                                     <option>15 October 2024</option>
+//                                     <option>16 October 2024</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Adults</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>1</option>
+//                                     <option>2</option>
+//                                     <option>3</option>
+//                                 </select>
+//                             </div>
+//                             <div>
+//                                 <label className="block text-gray-600 mb-1">Children</label>
+//                                 <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                     <option>1</option>
+//                                     <option>2</option>
+//                                     <option>3</option>
+//                                 </select>
+//                             </div>
+//                             <Button className="custom-button3 w-full">Check Availability</Button>
+//                         </form>
+//                     </div> */}
+
+
+
+//                         <div className="md:block w-full bottom-12  md:w-1/2 bg-white shadow-md p-7 border border-gray-200">
+//                             <form
+//                                 className="md:space-y-4 md:p-6 border md:border-none bg-transparent bg-cover bg-no-repeat"
+//                                 style={{
+//                                     backgroundImage: `url(${frame})`, // Add your background image
+//                                     backgroundPosition: 'center, left top', // First image centered, second image top-left
+//                                     backgroundSize: 'cover', // First image covers, second image half width & full height
+//                                     backgroundRepeat: 'no-repeat, no-repeat', // Prevent repeating for both
+//                                 }}
+//                                 hidden={window.innerWidth < 768} // Hide on small screens
+//                             >
+//                                 {/* Form content here */}
+
+
+//                                 {/* <form
+//                             className={`md:bg-cover md:bg-no-repeat hidden md:space-y-4 md:p-6 border md:border-none bg-transparent`}
+//                             style={{
+//                                 backgroundImage: window.innerWidth >= 768 ? `url(${frame})` : "none",
+//                             }}
+//                         > */}
+//                                 <h2 className="text-xl font-forum text-gray-800 text-center mb-4">
+//                                     Check Availability
+//                                 </h2>
+
+//                                 {/* Check In */}
+//                                 <div>
+//                                     <label className="block text-amber-950 mb-1 font-forum ml-4 md:ml-0">Check In</label>
+//                                     <DatePicker
+//                                         placeholder="Select Check In Date"
+//                                         className="w-5/6 ml-6 md:w-full md:ml-0 items-center border rounded-md"
+//                                         format="DD MMMM YYYY"
+//                                     />
+//                                 </div>
+
+//                                 {/* Check Out */}
+//                                 <div>
+//                                     <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Check Out</label>
+//                                     <DatePicker
+//                                         placeholder="Select Check Out Date"
+//                                         className="w-5/6 ml-6 md:w-full md:ml-0 border rounded-md"
+//                                         format="DD MMMM YYYY"
+//                                     />
+//                                 </div>
+
+//                                 {/* Adults */}
+//                                 <div>
+//                                     <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Adults</label>
+//                                     <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                         <option>1</option>
+//                                         <option>2</option>
+//                                         <option>3</option>
+//                                     </select>
+//                                 </div>
+
+//                                 {/* Children */}
+//                                 <div>
+//                                     <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Children</label>
+//                                     <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+//                                         <option>1</option>
+//                                         <option>2</option>
+//                                         <option>3</option>
+//                                     </select>
+//                                 </div>
+
+//                                 {/* Submit Button */}
+//                                 <Button
+//                                     type="primary"
+//                                     htmlType="submit"
+//                                     className=" custom-button3 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md"
+//                                 >
+//                                     Check Availability
+//                                 </Button>
+//                             </form>
+//                         </div>
+
+
+
+
+
+//                     </div>
+//                 </div >
+
+//             </div >
+//         </div >
+
+//     );
+// }
+
+// export default Navbar;
+
 import React, { useState } from "react";
-import bg from "../Assests/bg2.jpg";
+// import bg from "../Assests/bg2.jpg";
 // import logo from "../Assests/logo.png";
 // import icon1 from "../Assests/whatsapp.png";
 import { DatePicker, Button } from "antd";
 import frame from "../Assests/frame.png"
 import "../Header/Style2.css";
+import myvideo from "../Assests/video1.mp4"
 
 
 function Navbar() {
@@ -772,333 +1138,88 @@ function Navbar() {
     // };
 
     return (
-        <div className="relative w-full bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
-            <div className="container mx-auto w-full max-w-[1280px]   md:pt-52">
 
 
-                {/* <div className="relative">
+<div className="relative w-full min-h-screen bg-cover bg-center" >
+    {/* Background Video */}
+    <video
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src={myvideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+    />
 
-                    <div className=" hidden absolute top-0 right-0 py-2 px-4 md:px-6 md:flex items-center space-x-4">
-                        <a
-                            href="https://wa.me/+909876543210"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center space-x-2"
-                        >
-                            <img src={icon1} alt="WhatsApp" className="h-6" />
-                            <span className="text-black">+90-9876543210</span>
-                        </a>
-                        <span className="text-gray-500">/</span>
-                        <span className="text-black">+91-0123456789</span>
-                    </div>
-
-                    
-                    <div className=" bg-white md:bg-transparent flex items-center justify-between py-4 px-6">
-                     
-                        <div className="flex items-center space-x-2">
-                            <img src={logo} className="h-16 md:h-28" alt="Logo" />
-                        </div>
-
-                        
-                        <nav className="hidden md:flex items-center space-x-8">
-                            <a href="#home" className="text-black hover:text-red-800">
-                                HOME
-                            </a>
-                            <a href="#about" className="text-black hover:text-red-800">
-                                ABOUT
-                            </a>
-                            <a href="#rooms" className="text-black hover:text-red-800">
-                                ROOMS
-                            </a>
-                            <a href="#hotel" className="text-black hover:text-red-800">
-                                HOTEL
-                            </a>
-                            <a href="#pages" className="text-black hover:text-red-800">
-                                PAGES
-                            </a>
-                            <a href="#contact" className="text-black hover:text-red-800">
-                                CONTACT US
-                            </a>
-                        </nav>
-
-                        
-                        <button
-                            className="md:hidden text-gray-700 focus:outline-none"
-                            onClick={toggleMenu}
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth={1.5}
-                                stroke="currentColor"
-                                className="w-6 h-6"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M3.75 5.25h16.5m-16.5 7.5h16.5m-16.5 7.5h16.5"
-                                />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-
-
-
-
-                
-                {isMobileMenuOpen && (
-                    <>
-                        
-                        <div
-                            onClick={toggleMenu}
-                            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
-                        ></div>
-
-                       
-                        <div className="fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 transform transition-transform duration-300">
-                            <div className="flex justify-end p-4">
-                                <button
-                                    onClick={toggleMenu}
-                                    className="text-gray-800 hover:text-red-600 text-3xl font-bold"
-                                >
-                                    &times;
-                                </button>
-                            </div>
-                            <nav>
-                                <a
-                                    href="#home"
-                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
-                                >
-                                    Home
-                                </a>
-                                <a
-                                    href="#about"
-                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
-                                >
-                                    About
-                                </a>
-                                <a
-                                    href="#rooms"
-                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
-                                >
-                                    Rooms
-                                </a>
-                                <a
-                                    href="#hotel"
-                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
-                                >
-                                    Hotel
-                                </a>
-                                <a
-                                    href="#pages"
-                                    className="block px-6 py-4 border-b text-gray-800 hover:bg-amber-800 hover:text-white"
-                                >
-                                    Pages
-                                </a>
-                                <a
-                                    href="#contact"
-                                    className="block px-6 py-4 text-gray-800 hover:bg-amber-800 hover:text-white"
-                                >
-                                    Contact Us
-                                </a>
-                            </nav>
-                        </div>
-                    </>
-                )} */}
-
-
-                {/* Hero Section */}
-                <div className="flex flex-wrap p-6">
-                    <div className="w-full md:w-3/5 font-normal mt-auto mb-auto pt-4 pb-5">
-                        <span className="text-lg font-forum text-amber-800">M A J E S T I C R O O M S</span>
-                        <h1 className="font-forum text-[40px]  md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
-                            Discover Your Paradise <br />
-                            Where You Are
-                        </h1>
-                        <p className=" hidden md:block font-forum text-amber-950 mt-4 pr-6">
-                            Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor
-                            tristique velit efficitur, a pulvinar sem hasellus.
-                        </p>
-
-                        <Button className="custom-button2 hidden md:block mt-4 mr-5 text-lg font-forum bg-customBrown mb-4">
-                            Explore Now
-                        </Button>
-                    </div>
-
-                    {/* Availability Form */}
-                    {/* <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
-                        <form style={{ backgroundImage: `url(${frame})` }} className="bg-cover bg-no-repeat space-y-4 p-6">
-                            <h2 className="text-xl font-Fraunces text-gray-800 text-center">
-                                Check Availability
-                            </h2>
-                            <div>
-                                <label className="block text-amber-950 mb-1">Check In</label>
-                                <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
-                                    <option>13 October 2024</option>
-                                    <option>14 October 2024</option>
-                                    <option>15 October 2024</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block text-gray-600 mb-1">Check Out</label>
-                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                    <option>14 October 2024</option>
-                                    <option>15 October 2024</option>
-                                    <option>16 October 2024</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block text-gray-600 mb-1">Adults</label>
-                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block text-gray-600 mb-1">Children</label>
-                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <Button className="custom-button3 w-full">Check Availability</Button>
-                        </form>
-                    </div> */}
-
-                    {/* <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
-                        <form
-                            className="bg-cover bg-no-repeat   md:space-y-4 md:p-6 border md:border-none md:"
-                            style={{ backgroundImage: `url(${frame})` }}
-                        >
-                            <h2 className="text-xl font-Fraunces text-gray-800 text-center">
-                                Check Availability
-                            </h2>
-                            <div>
-                                <label className="block text-amber-950 mb-1">Check In</label>
-                                <select className="w-full px-4 py-2 focus:outline-none focus:ring-2 text-amber-950">
-                                    <option>13 October 2024</option>
-                                    <option>14 October 2024</option>
-                                    <option>15 October 2024</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block text-gray-600 mb-1">Check Out</label>
-                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                    <option>14 October 2024</option>
-                                    <option>15 October 2024</option>
-                                    <option>16 October 2024</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block text-gray-600 mb-1">Adults</label>
-                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block text-gray-600 mb-1">Children</label>
-                                <select className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <Button className="custom-button3 w-full">Check Availability</Button>
-                        </form>
-                    </div> */}
-
-
-
-                    <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200">
-                        <form
-                            className="md:space-y-4 md:p-6 border md:border-none bg-transparent bg-cover bg-no-repeat"
-                            style={{
-                                backgroundImage: `url(${frame})`, // Add your background image
-                                backgroundPosition: 'center, left top', // First image centered, second image top-left
-                                backgroundSize: 'cover', // First image covers, second image half width & full height
-                                backgroundRepeat: 'no-repeat, no-repeat', // Prevent repeating for both
-                            }}
-                            hidden={window.innerWidth < 768} // Hide on small screens
-                        >
-                            {/* Form content here */}
-                        
-
-                        {/* <form
-                            className={`md:bg-cover md:bg-no-repeat hidden md:space-y-4 md:p-6 border md:border-none bg-transparent`}
-                            style={{
-                                backgroundImage: window.innerWidth >= 768 ? `url(${frame})` : "none",
-                            }}
-                        > */}
-                        <h2 className="text-xl font-forum text-gray-800 text-center mb-4">
-                            Check Availability
-                        </h2>
-
-                        {/* Check In */}
-                        <div>
-                            <label className="block text-amber-950 mb-1 font-forum ml-4 md:ml-0">Check In</label>
-                            <DatePicker
-                                placeholder="Select Check In Date"
-                                className="w-5/6 ml-6 md:w-full md:ml-0 items-center border rounded-md"
-                                format="DD MMMM YYYY"
-                            />
-                        </div>
-
-                        {/* Check Out */}
-                        <div>
-                            <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Check Out</label>
-                            <DatePicker
-                                placeholder="Select Check Out Date"
-                                className="w-5/6 ml-6 md:w-full md:ml-0 border rounded-md"
-                                format="DD MMMM YYYY"
-                            />
-                        </div>
-
-                        {/* Adults */}
-                        <div>
-                            <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Adults</label>
-                            <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-
-                        {/* Children */}
-                        <div>
-                            <label className="block text-gray-600 mb-1 font-forum ml-4 md:ml-0">Children</label>
-                            <select className="w-5/6 ml-6 md:w-full md:ml-0 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-
-                        {/* Submit Button */}
-                        <Button
-                            type="primary"
-                            htmlType="submit"
-                            className=" custom-button3 w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md"
-                        >
-                            Check Availability
-                        </Button>
-                    </form>
-                </div>
-
-
-
-
-
+    <div className=" relative z-10 container mx-auto w-full max-w-[1280px] p-6  ">
+        <div className="flex flex-col md:flex-row ">
+            {/* Hero Content */}
+            <div className="w-full md:w-3/5 font-normal md:mt-48 mb-auto pt-4 pb-5 ">
+                <span className="text-lg font-forum text-amber-800">M A J E S T I C R O O M S</span>
+                <h1 className="font-forum text-[40px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
+                    Discover Your Paradise <br />
+                    Where You Are
+                </h1>
+                <p className="hidden md:block font-forum text-amber-950 mt-4 pr-6">
+                    Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor tristique velit efficitur, a pulvinar sem hasellus.
+                </p>
+                <Button className="custom-button2 hidden md:block mt-4 mr-5 text-lg font-forum bg-customBrown mb-4">
+                    Explore Now
+                </Button>
             </div>
-        </div >
-        </div >
 
+            {/* Availability Form */}
+            <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200  md:mt-48 ">
+                <form
+                    className="md:space-y-4 md:p-6 border md:border-none bg-transparent bg-cover bg-no-repeat"
+                    style={{
+                        backgroundImage: `url(${frame})`,
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        backgroundRepeat: 'no-repeat',
+                    }}
+                >
+                    <h2 className="text-xl font-forum text-gray-800 text-center mb-4">Check Availability</h2>
+                    <div>
+                        <label className="block text-amber-950 mb-1 font-forum">Check In</label>
+                        <DatePicker
+                            placeholder="Select Check In Date"
+                            className="w-full px-4 py-2 border rounded-md"
+                            format="DD MMMM YYYY"
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-gray-600 mb-1 font-forum">Check Out</label>
+                        <DatePicker
+                            placeholder="Select Check Out Date"
+                            className="w-full px-4 py-2 border rounded-md"
+                            format="DD MMMM YYYY"
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-gray-600 mb-1 font-forum">Adults</label>
+                        <select className="w-full px-4 py-2 border rounded-md">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label className="block text-gray-600 mb-1 font-forum">Children</label>
+                        <select className="w-full px-4 py-2 border rounded-md">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <Button type="primary" className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md">
+                        Check Availability
+                    </Button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
     );
 }
