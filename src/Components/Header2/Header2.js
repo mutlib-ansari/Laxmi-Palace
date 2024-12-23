@@ -194,7 +194,7 @@ function Header2() {
     }, []);
 
     return (
-        <div className={`z-20 ${isSticky ? "sticky top-0 bg-white shadow-md" : ""}`}>
+        <div className={`z-20 ${isSticky ? "sticky top-0 md:bg-white shadow-md" : ""}`}>
             <div className="w-full absolute z-20   ">
                 {/* Top Contact Bar */}
                 {/* <div className="hidden absolute top-0 right-0 py-2 px-4 md:px-6 md:flex items-center space-x-4">
