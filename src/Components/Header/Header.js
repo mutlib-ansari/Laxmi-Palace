@@ -804,14 +804,14 @@
 //                         <span className="text-black">+91-0123456789</span>
 //                     </div>
 
-                    
+
 //                     <div className=" bg-white md:bg-transparent flex items-center justify-between py-4 px-6">
-                     
+
 //                         <div className="flex items-center space-x-2">
 //                             <img src={logo} className="h-16 md:h-28" alt="Logo" />
 //                         </div>
 
-                        
+
 //                         <nav className="hidden md:flex items-center space-x-8">
 //                             <a href="#home" className="text-black hover:text-red-800">
 //                                 HOME
@@ -833,7 +833,7 @@
 //                             </a>
 //                         </nav>
 
-                        
+
 //                         <button
 //                             className="md:hidden text-gray-700 focus:outline-none"
 //                             onClick={toggleMenu}
@@ -860,16 +860,16 @@
 
 
 
-                
+
 //                 {isMobileMenuOpen && (
 //                     <>
-                        
+
 //                         <div
 //                             onClick={toggleMenu}
 //                             className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
 //                         ></div>
 
-                       
+
 //                         <div className="fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 transform transition-transform duration-300">
 //                             <div className="flex justify-end p-4">
 //                                 <button
@@ -1125,7 +1125,7 @@ import React, { useState } from "react";
 import { DatePicker, Button } from "antd";
 import frame from "../Assests/frame.png"
 import "../Header/Style2.css";
-import myvideo from "../Assests/video1.mp4"
+// import myvideo from "../Assests/video1.mp4"
 
 
 function Navbar() {
@@ -1140,86 +1140,95 @@ function Navbar() {
     return (
 
 
-<div className="relative w-full min-h-screen bg-cover bg-center" >
-    {/* Background Video */}
-    <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src={myvideo}
-        autoPlay
-        loop
-        muted
-        playsInline
-    />
+        <div className="relative w-full min-h-screen bg-cover bg-center" >
+            {/* Background Video */}
+            {/* <video
+                className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                src="https://youtu.be/kHrEA7dN95o"
+                autoPlay
+                loop
+                muted
+                playsInline
+            
+            
+    /> */}
+            <iframe
+                className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                src="https://www.youtube.com/embed/kHrEA7dN95o?autoplay=1&loop=1&mute=1&playlist=kHrEA7dN95o"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+            ></iframe>
 
-    <div className=" relative z-10 container mx-auto w-full max-w-[1280px] p-6  ">
-        <div className="flex flex-col md:flex-row ">
-            {/* Hero Content */}
-            <div className="w-full md:w-3/5 font-normal md:mt-48 mb-auto pt-4 pb-5 ">
-                <span className="text-lg font-forum text-amber-800">M A J E S T I C R O O M S</span>
-                <h1 className="font-forum text-[40px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
-                    Discover Your Paradise <br />
-                    Where You Are
-                </h1>
-                <p className="hidden md:block font-forum text-amber-950 mt-4 pr-6">
-                    Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor tristique velit efficitur, a pulvinar sem hasellus.
-                </p>
-                <Button className="custom-button2 hidden md:block mt-4 mr-5 text-lg font-forum bg-customBrown mb-4">
-                    Explore Now
-                </Button>
-            </div>
+            <div className=" relative z-10 container mx-auto w-full max-w-[1280px] p-6  ">
+                <div className="flex flex-col md:flex-row ">
+                    {/* Hero Content */}
+                    <div className="w-full md:w-3/5 font-normal md:mt-48 mb-auto pt-4 pb-5 ">
+                        <span className="text-lg font-forum text-amber-800">M A J E S T I C R O O M S</span>
+                        <h1 className="font-forum text-[40px] md:text-[60px] leading-[37px] md:leading-[70px] text-gray-800">
+                            Discover Your Paradise <br />
+                            Where You Are
+                        </h1>
+                        <p className="hidden md:block font-forum text-amber-950 mt-4 pr-6">
+                            Sed imperdiet dignissim odio dignissim bibendum. Praesent porttitor tristique velit efficitur, a pulvinar sem hasellus.
+                        </p>
+                        <Button className="custom-button2 hidden md:block mt-4 mr-5 text-lg font-forum bg-customBrown mb-4">
+                            Explore Now
+                        </Button>
+                    </div>
 
-            {/* Availability Form */}
-            <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200  md:mt-48 ">
-                <form
-                    className="md:space-y-4 md:p-6 border md:border-none bg-transparent bg-cover bg-no-repeat"
-                    style={{
-                        backgroundImage: `url(${frame})`,
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat',
-                    }}
-                >
-                    <h2 className="text-xl font-forum text-gray-800 text-center mb-4">Check Availability</h2>
-                    <div>
-                        <label className="block text-amber-950 mb-1 font-forum">Check In</label>
-                        <DatePicker
-                            placeholder="Select Check In Date"
-                            className="w-full px-4 py-2 border rounded-md"
-                            format="DD MMMM YYYY"
-                        />
+                    {/* Availability Form */}
+                    <div className="w-full md:w-2/5 bg-white shadow-md p-7 border border-gray-200  md:mt-48 ">
+                        <form
+                            className="md:space-y-4 md:p-6 border md:border-none bg-transparent bg-cover bg-no-repeat"
+                            style={{
+                                backgroundImage: `url(${frame})`,
+                                backgroundPosition: 'center',
+                                backgroundSize: 'cover',
+                                backgroundRepeat: 'no-repeat',
+                            }}
+                        >
+                            <h2 className="text-xl font-forum text-gray-800 text-center mb-4">Check Availability</h2>
+                            <div>
+                                <label className="block text-amber-950 mb-1 font-forum">Check In</label>
+                                <DatePicker
+                                    placeholder="Select Check In Date"
+                                    className="w-full px-4 py-2 border rounded-md"
+                                    format="DD MMMM YYYY"
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-gray-600 mb-1 font-forum">Check Out</label>
+                                <DatePicker
+                                    placeholder="Select Check Out Date"
+                                    className="w-full px-4 py-2 border rounded-md"
+                                    format="DD MMMM YYYY"
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-gray-600 mb-1 font-forum">Adults</label>
+                                <select className="w-full px-4 py-2 border rounded-md">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="block text-gray-600 mb-1 font-forum">Children</label>
+                                <select className="w-full px-4 py-2 border rounded-md">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <Button type="primary" className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md">
+                                Check Availability
+                            </Button>
+                        </form>
                     </div>
-                    <div>
-                        <label className="block text-gray-600 mb-1 font-forum">Check Out</label>
-                        <DatePicker
-                            placeholder="Select Check Out Date"
-                            className="w-full px-4 py-2 border rounded-md"
-                            format="DD MMMM YYYY"
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-gray-600 mb-1 font-forum">Adults</label>
-                        <select className="w-full px-4 py-2 border rounded-md">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label className="block text-gray-600 mb-1 font-forum">Children</label>
-                        <select className="w-full px-4 py-2 border rounded-md">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                    <Button type="primary" className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-md">
-                        Check Availability
-                    </Button>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
     );
 }
