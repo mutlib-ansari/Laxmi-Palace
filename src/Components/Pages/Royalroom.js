@@ -19,19 +19,19 @@
 //         <div>
 //             <Splide>
 //                 <SplideSlide>
-//                     <img src={img1} alt="Slide 1" className="h-96  object-cover" />
+//                     <img src={img1} alt="Slide 1" className="h-full  object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img2} alt="Slide 2" className="h-96  object-cover" />
+//                     <img src={img2} alt="Slide 2" className="h-full  object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img3} alt="Slide 3" className="h-96  object-cover" />
+//                     <img src={img3} alt="Slide 3" className="h-full  object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img3} alt="Slide 4" className="h-96  object-cover" />
+//                     <img src={img3} alt="Slide 4" className="h-full  object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img3} alt="Slide 5" className="h-96  object-cover" />
+//                     <img src={img3} alt="Slide 5" className="h-full  object-cover" />
 //                 </SplideSlide>
 //             </Splide>
 //         </div>
@@ -75,25 +75,25 @@
 //                 extensions={{ AutoScroll }} // Add extensions for AutoScroll
 //             >
 //                 <SplideSlide>
-//                     <img src={img1} alt="Slide 1" className="h-96 object-cover" />
+//                     <img src={img1} alt="Slide 1" className="h-full object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img4} alt="Slide 2" className="h-96 object-cover" />
+//                     <img src={img4} alt="Slide 2" className="h-full object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img5} alt="Slide 3" className="h-96 object-cover" />
+//                     <img src={img5} alt="Slide 3" className="h-full object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img4} alt="Slide 4" className="h-96 object-cover" />
+//                     <img src={img4} alt="Slide 4" className="h-full object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img5} alt="Slide 5" className="h-96 object-cover" />
+//                     <img src={img5} alt="Slide 5" className="h-full object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img5} alt="Slide 5" className="h-96 object-cover" />
+//                     <img src={img5} alt="Slide 5" className="h-full object-cover" />
 //                 </SplideSlide>
 //                 <SplideSlide>
-//                     <img src={img5} alt="Slide 5" className="h-96 object-cover" />
+//                     <img src={img5} alt="Slide 5" className="h-full object-cover" />
 //                 </SplideSlide>
 //             </Splide>
 
@@ -122,8 +122,8 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css'; // Import Splide styles
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import { FiPhone } from "react-icons/fi";
-import img1 from '../Assests/lroom1.webp';
-import img4 from '../Assests/lroom4.jpeg';
+// import img1 from '../Assests/lroom1.webp';
+// import img4 from '../Assests/lroom4.jpeg';
 import img5 from '../Assests/lroom5.jpg';
 import { Button } from 'antd';
 
@@ -145,34 +145,34 @@ function Royalroom() {
                 extensions={{ AutoScroll }} // Add extensions for AutoScroll
             >
                 <SplideSlide>
-                    <img src={img1} alt="Slide 1" className="h-96 object-cover" />
+                    <img src={img5} alt="Slide 1" className="h-full object-cover" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img src={img4} alt="Slide 2" className="h-96 object-cover" />
+                    <img src={img5} alt="Slide 2" className="h-full object-cover" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img src={img5} alt="Slide 3" className="h-96 object-cover" />
+                    <img src={img5} alt="Slide 3" className="h-full object-cover" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img src={img4} alt="Slide 4" className="h-96 object-cover" />
+                    <img src={img5} alt="Slide 4" className="h-full object-cover" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img src={img5} alt="Slide 5" className="h-96 object-cover" />
+                    <img src={img5} alt="Slide 5" className="h-full object-cover" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img src={img5} alt="Slide 5" className="h-96 object-cover" />
+                    <img src={img5} alt="Slide 5" className="h-full object-cover" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img src={img5} alt="Slide 5" className="h-96 object-cover" />
+                    <img src={img5} alt="Slide 5" className="h-full object-cover" />
                 </SplideSlide>
             </Splide>
 
             
-            <div className='w-full absolute bottom-0 left-0 right-0  py-4'>
+            <div className='w-full md:absolute bottom-0 left-0 right-0  py-4'>
                 <ul className='flex flex-col md:flex-row justify-between items-center text-white md:ml-4'>
                     
                     <li className='text-center md:text-left'>
-                        <h1 className='text-3xl sm:text-4xl md:text-6xl font-forum'>Laxmi Place</h1>
+                        <h1 className='text-3xl text-black md:text-white sm:text-4xl md:text-6xl font-forum'>Laxmi Place</h1>
                     </li>
 
                     

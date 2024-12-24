@@ -194,8 +194,8 @@ function Header2() {
     }, []);
 
     return (
-        <div className={`z-20 ${isSticky ? "sticky top-0 md:bg-white shadow-md" : ""}`}>
-            <div className="w-full absolute z-20   ">
+        <div className={`z-20 ${isSticky ? "sticky top-0  bg-white shadow-md" : ""}`}>
+            <div className="w-full absolute z-20  ">
                 {/* Top Contact Bar */}
                 {/* <div className="hidden absolute top-0 right-0 py-2 px-4 md:px-6 md:flex items-center space-x-4">
                     <a
@@ -212,7 +212,7 @@ function Header2() {
                 </div> */}
 
                 {/* Main Navbar */}
-                <div className="container flex items-center justify-between py-4 px-6">
+                <div className="container  mx-auto w-full max-w-[1280px] flex items-center justify-between py-4 px-6">
                     {/* Logo */}
                     <div className="relative flex items-center space-x-2">
                         <img src={logo} className="h-16 md:h-28" alt="Logo" />
@@ -507,4 +507,7 @@ export default Header2;
 // }
 
 // export default Header2;
+
+
+
 

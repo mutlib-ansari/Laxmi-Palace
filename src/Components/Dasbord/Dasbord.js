@@ -891,6 +891,7 @@ function RoomSelector() {
                 { name: "Air Conditioned", icon: <FaHotTub /> },
             ],
             image: royalRoomImage,
+            link: "/royalroom",
         },
         family: {
             title: "Family Room",
@@ -903,6 +904,7 @@ function RoomSelector() {
                 { name: "Free Wifi", icon: <FaWifi /> },
             ],
             image: familyRoomImage,
+            link: "/familyroom",
         },
         suite: {
             title: "Family Suite",
@@ -915,6 +917,7 @@ function RoomSelector() {
                 { name: "Mini Bar", icon: <FaCocktail /> },
             ],
             image: familySuiteImage,
+            link: "/familysuite",
         },
     };
 
@@ -988,14 +991,15 @@ function RoomSelector() {
                                     <span className="font-forum text-lg">{amenity.name}</span>
                                 </div>
                             ))}
-                            <Link to="/Royalroom"><Button className="custom-button4 md:p-2 text-sm sm:text-base md:text-lg font-forum">
+                            <Link to={currentRoom.link}>
+                            <Button className="custom-button4 md:p-2 text-sm sm:text-base md:text-lg font-forum">
                                 Book Now
                             </Button></Link>
                         </div>
                     </div>
 
-                     {/* Right Image  */}
-                     <div className="w-full md:w-1/2 order-first md:order-last md:rounded-r-3xl">
+                    {/* Right Image  */}
+                    <div className="w-full md:w-1/2 order-first md:order-last md:rounded-r-3xl">
                         <img
                             src={currentImageIndex === 0 ? currentRoom.image : sliderImages[currentImageIndex]}
                             alt={currentImageIndex === 0 ? currentRoom.title : `Slide ${currentImageIndex + 1}`}
@@ -1003,14 +1007,14 @@ function RoomSelector() {
                         />
                     </div>
 
-                    
-                    </div>
+
                 </div>
             </div>
-            );
+        </div>
+    );
 }
 
-            export default RoomSelector;
+export default RoomSelector;
 
 
 
