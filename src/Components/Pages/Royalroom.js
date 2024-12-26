@@ -388,10 +388,10 @@
 //                         </div>
 //                             </div>
 
-                            
+
 //                         </div>
 
-                       
+
 //                     </div>
 
 
@@ -513,24 +513,63 @@ function Royalroom() {
                         {/* Add the rest of your text here as needed */}
                         <p className='my-6 text-xl leading-8'>The Leela Palace Jaipur is a beacon of luxury and splendor, and therefore, one of the most desired luxury hotels Jaipur has to offer. Rich in splendorous architectures, lavish world-class amenities, and impeccable services, this hotel provides a perfect place for those seeking a stunning destination wedding in Jaipur. Bringing the finest Rajputana grandeur with finest contemporary luxury, The Leela Palace Jaipur is indeed one of the candidates for the top hotels in Jaipur.</p>
 
-                       <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>A Luxury Destination for Grand Weddings</h2>
+                        <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>A Luxury Destination for Grand Weddings</h2>
                         <p className='mt-4 text-lg leading-relaxed'>There is nothing that can beat The Leela Palace Jaipur for a regal wedding. It boasts of having a spacious property of 370,260 square meters and has three indoor venues along with four outdoor spaces that can hold events lavishly and sophisticatedly. Whether it is an explosion of grand celebration or an intimate ceremony, the venues let you make the dream wedding happen.</p>
-                      <p className='mt-4 text-lg leading-relaxed'>Wedding planners are available at the hotel to take care of everything ranging from décor to catering. The glorious surroundings and incomparable amenities make The Leela Palace Jaipur permanently hold its place as the number one destination wedding venue in Jaipur.</p>
-                       <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>Luxurious Rooms</h2>
-                       <p className='mt-4 text-lg leading-relaxed'>The Leela Palace Jaipur has 200 lavishly set up rooms and suites, offering a haven of comfort and elegance. Every room comes with modern amenities such as a 49-inch LED TV, a minibar, and an iPod docking station, promising an exhilarating experience. The four-fixture bathrooms, complete with soaking tubs, are the perfect haven for unwinding after a hectic day of celebrations.</p>
+                        <p className='mt-4 text-lg leading-relaxed'>Wedding planners are available at the hotel to take care of everything ranging from décor to catering. The glorious surroundings and incomparable amenities make The Leela Palace Jaipur permanently hold its place as the number one destination wedding venue in Jaipur.</p>
+                        <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>Luxurious Rooms</h2>
+                        <p className='mt-4 text-lg leading-relaxed'>The Leela Palace Jaipur has 200 lavishly set up rooms and suites, offering a haven of comfort and elegance. Every room comes with modern amenities such as a 49-inch LED TV, a minibar, and an iPod docking station, promising an exhilarating experience. The four-fixture bathrooms, complete with soaking tubs, are the perfect haven for unwinding after a hectic day of celebrations.</p>
                         <p className='mt-4 text-lg leading-relaxed'>Guests who decide to stay at this hotel in Jaipur can expect personalized attention along with a serene environment, which makes the stay truly memorable. Be it a wedding guest or you're planning a romantic retreat, your stay here at The Leela Palace Jaipur will be unparalleled in luxury</p>
                         <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>Culinary Delights</h2>
                         <p className='mt-4 text-lg leading-relaxed'>The Leela Palace Jaipur has four beautiful dining venues with diverse gastronomic experiences. Sukh Mahal, the all-day dining restaurant, sports an interactive live kitchen concept with an exciting array of international and local delicacies. Then, there is Mohan Mahal, a more intimate dining destination inspired by the Sheesh Mahal of Amer Fort, creating magical ambiance with their mirrored décors and candlelight setting.</p>
                         <p className='mt-4 text-lg leading-relaxed'>An additional option for guests to unwind is the lounge and bar, Jharokha, offering an exciting variety of coffees and handcrafted cocktails. For a final indulgence, the rooftop dining at Hawa Mahal should be described as an exhilarating 'Under the Stars' experience. With this venue offering a panoramic view of the Aravalli Hills, guests will enjoy the finest grills while appreciating Jaipur's pleasant climate. These alternatives make The Leela Palace Jaipur one of the best hotels in Jaipur for food enthusiasts.</p>
                         <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6 '>Wellness and Recreation</h2>
-                         <p className='mt-4 text-lg leading-relaxed'>Offering rejuvenation, indulgence, relaxation, and renewal, the Leela Palace Jaipur focuses on delivering a spa service for the holistic wellness of its guests. The guests can also engage in recreation needs with the leisure facilities such as the fitness center and swimming pool.</p>
-                         <p className='mt-4 text-lg leading-relaxed'>From a relaxing pre-wedding pampering session to a regenerative retreat after a grand celebration, every whim and desire are taken care of at the wellness facilities at this luxury hotel in Jaipur.</p>
-                         <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>Close Proximity to Iconic Landmarks</h2>
-                         <p className='mt-4 text-lg leading-relaxed'>Strategically located on the Jaipur-Delhi Highway, The Leela Palace Jaipur gives easy access to the city's most happening landmarks. It is 8 km from Seesh Mahal, 9 km from Jaigarh Fort, and 12 km from Jal Mahal, which enables the guests to derive all the splendor of rich culture from Jaipur. Located close to 31 km from Jaipur International Airport, it ensures that wedding guests from every corner of the globe can arrive without hassle.</p>
-                         <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>Why choose The Leela Palace Jaipur?</h2>
-                         <p className='mt-4 text-lg leading-relaxed'>The Leela Palace Jaipur itself stands like a jewel due to its traditional Rajasthani charm juxtaposed with the modern luxury of one of the best hotels in Jaipur. Its grand venues, luxurious accommodations, exceptional dining options, and world-class service define this as one of the best hotels in Jaipur. And so, for couples looking for a fairy-tale destination wedding in Jaipur, the promise from The Leela Palace will be an experience filled with elegance, sophistication, and unforgettable memories.</p>
-                         <p className='mt-4 text-lg leading-relaxed'>Whether for a wedding or just to treat your senses to luxury, each moment counts and is very extraordinary for experiences one's never had about at The Leela Palace Jaipur.</p>
+                        <p className='mt-4 text-lg leading-relaxed'>Offering rejuvenation, indulgence, relaxation, and renewal, the Leela Palace Jaipur focuses on delivering a spa service for the holistic wellness of its guests. The guests can also engage in recreation needs with the leisure facilities such as the fitness center and swimming pool.</p>
+                        <p className='mt-4 text-lg leading-relaxed'>From a relaxing pre-wedding pampering session to a regenerative retreat after a grand celebration, every whim and desire are taken care of at the wellness facilities at this luxury hotel in Jaipur.</p>
+                        <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>Close Proximity to Iconic Landmarks</h2>
+                        <p className='mt-4 text-lg leading-relaxed'>Strategically located on the Jaipur-Delhi Highway, The Leela Palace Jaipur gives easy access to the city's most happening landmarks. It is 8 km from Seesh Mahal, 9 km from Jaigarh Fort, and 12 km from Jal Mahal, which enables the guests to derive all the splendor of rich culture from Jaipur. Located close to 31 km from Jaipur International Airport, it ensures that wedding guests from every corner of the globe can arrive without hassle.</p>
+                        <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>Why choose The Leela Palace Jaipur?</h2>
+                        <p className='mt-4 text-lg leading-relaxed'>The Leela Palace Jaipur itself stands like a jewel due to its traditional Rajasthani charm juxtaposed with the modern luxury of one of the best hotels in Jaipur. Its grand venues, luxurious accommodations, exceptional dining options, and world-class service define this as one of the best hotels in Jaipur. And so, for couples looking for a fairy-tale destination wedding in Jaipur, the promise from The Leela Palace will be an experience filled with elegance, sophistication, and unforgettable memories.</p>
+                        <p className='mt-4 text-lg leading-relaxed'>Whether for a wedding or just to treat your senses to luxury, each moment counts and is very extraordinary for experiences one's never had about at The Leela Palace Jaipur.</p>
+
+                        {/* <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md w-full max-w-lg">
+                            
+                            <div className="w-full h-64 bg-blue-200 rounded-md flex items-center justify-center">
+                                <p className="text-gray-600 font-medium">Map Placeholder</p>
+                            </div>
+
+                            
+                            <div className="mt-4 text-center">
+                                <h2 className="text-lg font-semibold text-gray-800">Our Location</h2>
+                                <p className="text-gray-600 mt-2">
+                                    1234 Main Street, Cityville, State, 56789
+                                </p>
+                            </div>
+
+                            
+                            <div className="mt-4 flex space-x-4">
+                                <button className="px-4 py-2 bg-blue-500 text-white font-medium rounded hover:bg-blue-600">
+                                    Get Directions
+                                </button>
+                                <button className="px-4 py-2 bg-gray-300 text-gray-700 font-medium rounded hover:bg-gray-400">
+                                    Call Us
+                                </button>
+                            </div>
+                        </div> */}
+
+                        <div className="w-full h-64 rounded-md overflow-hidden">
+                            <iframe
+                                title="Google Map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153168!3d-37.81627917975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773e517a29e0c5!2s1234%20Main%20Street%2C%20Cityville!5e0!3m2!1sen!2s!4v1696113149612!5m2!1sen!2s"
+                                className="w-full h-full border-0"
+                                allowFullScreen
+                                loading="lazy"
+                            ></iframe>
+                        </div>
+
                     </div>
+
+
+
 
                     <div className='w-full font-forum  md:w-1/2 border rounded-lg bg-white py-4 px-6'>
                         <h2 className='text-2xl font-forum mb-6'>Gallery</h2>
@@ -602,11 +641,11 @@ function Royalroom() {
 
 
                             <div className="w-full max-w-md bg-white p-6 rounded-lg ">
-                           <h3 className="text-xl font-bold text-center mb-4">All Contact Details</h3>
-                             <p className="text-gray-700 mb-2 "><strong>Phone Number:</strong> +91 9351945935</p>
-                             <p className="text-gray-700 mb-2"><strong>Email:</strong> connect.weddinghues@gmail.com</p>
-                             <p className="text-gray-700"><strong>Address:</strong> Jaipur-Delhi Highway, NH 11, Kukas, Rajasthan 302028</p>
-                         </div>
+                                <h3 className="text-xl font-bold text-center mb-4">All Contact Details</h3>
+                                <p className="text-gray-700 mb-2 flex justify-between "><strong>Phone Number:</strong> +91 9351945935</p>
+                                <p className="text-gray-700 mb-2  flex justify-between"><strong>Email:</strong> connect.weddinghues@gmail.com</p>
+                                <p className="text-gray-700  flex justify-between"><strong>Address:</strong> Jaipur-Delhi Highway, NH 11, Kukas, Rajasthan 302028</p>
+                            </div>
                         </div>
                     </div>
                 </div>
