@@ -437,25 +437,67 @@ import image3 from "../Assests/about3.webp";
 import image4 from "../Assests/about4.webp";
 import image5 from "../Assests/about5.webp";
 import image6 from "../Assests/about6.webp";
+import Gallery from "react-photo-gallery";
+import Masonry from "react-masonry-css";
+
+
+
+const images = [
+    "https://source.unsplash.com/random/800x600",
+    "https://source.unsplash.com/random/600x600",
+    "https://source.unsplash.com/random/1200x800",
+    "https://source.unsplash.com/random/800x1200",
+    "https://source.unsplash.com/random/1600x1200",
+];
+
 
 function Royalroom() {
-    const [lightboxImage, setLightboxImage] = useState(null);
+
 
     const images = [image1, image2, image3, image4, image5, image6];
-
-    const openLightbox = (image) => {
-        setLightboxImage(image);
-    };
-
-    const closeLightbox = () => {
-        setLightboxImage(null);
-    };
-
+    const [selectedImage, setSelectedImage] = useState(null);
     const [form] = Form.useForm();
 
-    const onFinish = (values) => {
-        console.log("Form values: ", values);
+    const openModal = (image) => setSelectedImage(image);
+    const closeModal = () => setSelectedImage(null);
+    const onFinish = (values) => console.log("Form values: ", values);
+
+    const breakpointColumnsObj = {
+        default: 3,
+        1100: 2,
+        700: 1,
     };
+    // const [lightboxImage, setLightboxImage] = useState(null);
+
+    // const images = [image1, image2, image3, image4, image5, image6];
+
+    // const openLightbox = (image) => {
+    //     setLightboxImage(image);
+    // };
+
+    // const closeLightbox = () => {
+    //     setLightboxImage(null);
+    // };
+
+    // const [form] = Form.useForm();
+
+    // const onFinish = (values) => {
+    //     console.log("Form values: ", values);
+    // };
+
+    // const openLightbox = (image) => {
+    //     setLightboxImage(image);
+    // };
+
+    // const closeLightbox = () => {
+    //     setLightboxImage(null);
+    // };
+
+
+
+
+
+
 
     return (
         <div className='w-full relative bg-[#fdf8ee]'>
@@ -572,7 +614,7 @@ function Royalroom() {
 
 
                     <div className='w-full font-forum  md:w-1/2 border rounded-lg bg-white py-4 px-6'>
-                        <h2 className='text-2xl font-forum mb-6'>Gallery</h2>
+                        {/* <h2 className='text-2xl font-forum mb-6'>Gallery</h2>
                         <div className='grid grid-cols-2 sm:grid-cols-3 gap-4'>
                             {images.map((image, index) => (
                                 <img
@@ -604,47 +646,110 @@ function Royalroom() {
                                     </button>
                                 </div>
                             </div>
-                        )}
+                        )} */}
+                        <div>
+                            <div className="bg-gray-100 min-h-screen p-8">
+                                <h2 className="text-3xl font-bold text-center mb-8">Image Gallery</h2>
 
-                        <div className="mt-8 font-forum">
-                            <h2 className="text-2xl font-bold text-center mb-4">Contact Us</h2>
-                            <Form
-                                form={form}
-                                layout="vertical"
-                                onFinish={onFinish}
-                                className="space-y-4"
-                            >
-                                <Form.Item label="Name" name="name" rules={[{ required: true, message: "Please enter your name" }]}>
-                                    <Input placeholder="Your Name" className="px-4 py-2 rounded" />
-                                </Form.Item>
-                                <Form.Item label="Email" name="email" rules={[{ required: true, message: "Please enter your email" }, { type: "email", message: "Please enter a valid email" }]}>
-                                    <Input placeholder="Your Email" className="px-4 py-2 rounded" />
-                                </Form.Item>
-                                <Form.Item label="Mobile" name="mobile" rules={[{ required: true, message: "Please enter your mobile number" }]}>
-                                    <Input placeholder="Your Mobile Number" className="px-4 py-2 rounded" />
-                                </Form.Item>
-                                <Form.Item label="Tentative Wedding Date" name="weddingDate" rules={[{ required: true, message: "Please enter the wedding date" }]}>
-                                    <Input placeholder="Tentative Wedding Date" className="px-4 py-2 rounded" />
-                                </Form.Item>
-                                <Form.Item label="No Of Guests" name="guests" rules={[{ required: true, message: "Please enter the number of guests" }]}>
-                                    <Input placeholder="Number of Guests" className="px-4 py-2 rounded" />
-                                </Form.Item>
-                                <Form.Item label="Message" name="message" rules={[{ required: true, message: "Please enter your message" }]}>
-                                    <Input.TextArea rows={4} placeholder="Your Message" className="px-4 py-2 rounded" />
-                                </Form.Item>
-                                <Form.Item>
-                                    <Button type="primary" htmlType="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-                                        Submit
-                                    </Button>
-                                </Form.Item>
-                            </Form>
+                                {/* Image Grid */}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                    {images.map((image, index) => (
+                                        <div
+                                            key={index}
+                                            className="overflow-hidden rounded-lg cursor-pointer group"
+                                            onClick={() => openModal(image)}
+                                        >
+                                            <img
+                                                src={image}
+                                                alt={`Gallery ${index + 1}`}
+                                                className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+
+                                {/* Modal */}
+                                {selectedImage && (
+                                    <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+                                        <div className="relative">
+                                            <button
+                                                onClick={closeModal}
+                                                className="absolute top-4 right-4 text-white text-2xl font-bold"
+                                            >
+                                                ×
+                                            </button>
+                                            <img
+                                                src={selectedImage}
+                                                alt="Selected"
+                                                className="max-w-full max-h-screen rounded-lg"
+                                            />
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* <h1 className="text-3xl font-bold text-center mb-8">Image Gallery</h1>
+                            <Gallery photos={photos} direction="row" /> */}
 
 
-                            <div className="w-full max-w-md bg-white p-6 rounded-lg ">
-                                <h3 className="text-xl font-bold text-center mb-4">All Contact Details</h3>
-                                <p className="text-gray-700 mb-2 flex justify-between "><strong>Phone Number:</strong> +91 9351945935</p>
-                                <p className="text-gray-700 mb-2  flex justify-between"><strong>Email:</strong> connect.weddinghues@gmail.com</p>
-                                <p className="text-gray-700  flex justify-between"><strong>Address:</strong> Jaipur-Delhi Highway, NH 11, Kukas, Rajasthan 302028</p>
+                            <div className="container mx-auto py-8">
+                                <h1 className="text-3xl font-bold text-center mb-8">Masonry Gallery</h1>
+                                <Masonry
+                                    breakpointCols={breakpointColumnsObj}
+                                    className="flex gap-4"
+                                    columnClassName="masonry-column"
+                                >
+                                    {images.map((src, index) => (
+                                        <img
+                                            key={index}
+                                            src={src}
+                                            alt={`Gallery ${index}`}
+                                            className="rounded-lg shadow-lg w-full mb-4"
+                                        />
+                                    ))}
+                                </Masonry>
+                            </div>
+
+                            <div className="mt-8 font-forum">
+                                <h2 className="text-2xl font-bold text-center mb-4">Contact Us</h2>
+                                <Form
+                                    form={form}
+                                    layout="vertical"
+                                    onFinish={onFinish}
+                                    className="space-y-4"
+                                >
+                                    <Form.Item label="Name" name="name" rules={[{ required: true, message: "Please enter your name" }]}>
+                                        <Input placeholder="Your Name" className="px-4 py-2 rounded" />
+                                    </Form.Item>
+                                    <Form.Item label="Email" name="email" rules={[{ required: true, message: "Please enter your email" }, { type: "email", message: "Please enter a valid email" }]}>
+                                        <Input placeholder="Your Email" className="px-4 py-2 rounded" />
+                                    </Form.Item>
+                                    <Form.Item label="Mobile" name="mobile" rules={[{ required: true, message: "Please enter your mobile number" }]}>
+                                        <Input placeholder="Your Mobile Number" className="px-4 py-2 rounded" />
+                                    </Form.Item>
+                                    <Form.Item label="Tentative Wedding Date" name="weddingDate" rules={[{ required: true, message: "Please enter the wedding date" }]}>
+                                        <Input placeholder="Tentative Wedding Date" className="px-4 py-2 rounded" />
+                                    </Form.Item>
+                                    <Form.Item label="No Of Guests" name="guests" rules={[{ required: true, message: "Please enter the number of guests" }]}>
+                                        <Input placeholder="Number of Guests" className="px-4 py-2 rounded" />
+                                    </Form.Item>
+                                    <Form.Item label="Message" name="message" rules={[{ required: true, message: "Please enter your message" }]}>
+                                        <Input.TextArea rows={4} placeholder="Your Message" className="px-4 py-2 rounded" />
+                                    </Form.Item>
+                                    <Form.Item>
+                                        <Button type="primary" htmlType="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+                                            Submit
+                                        </Button>
+                                    </Form.Item>
+                                </Form>
+
+
+                                <div className="w-full max-w-md bg-white p-6 rounded-lg ">
+                                    <h3 className="text-xl font-bold text-center mb-4">All Contact Details</h3>
+                                    <p className="text-gray-700 mb-2 flex justify-between "><strong>Phone Number:</strong> +91 9351945935</p>
+                                    <p className="text-gray-700 mb-2  flex justify-between"><strong>Email:</strong> connect.weddinghues@gmail.com</p>
+                                    <p className="text-gray-700  flex justify-between"><strong>Address:</strong> Jaipur-Delhi Highway, NH 11, Kukas, Rajasthan 302028</p>
+                                </div>
                             </div>
                         </div>
                     </div>
