@@ -437,7 +437,7 @@ import image3 from "../Assests/about3.webp";
 import image4 from "../Assests/about4.webp";
 import image5 from "../Assests/about5.webp";
 import image6 from "../Assests/about6.webp";
-import Gallery from "react-photo-gallery";
+
 import Masonry from "react-masonry-css";
 
 
