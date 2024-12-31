@@ -495,7 +495,7 @@ function Royalroom() {
 
 
 
-
+    
 
 
 
@@ -552,7 +552,7 @@ function Royalroom() {
                         <p className='mt-4 text-lg leading-relaxed'>The Leela Palace Jaipur is a beacon of luxury...</p>
 
                         <p className='mt-4 text-lg leading-relaxed'>There is nothing that can beat The Leela Palace Jaipur...</p>
-                        {/* Add the rest of your text here as needed */}
+
                         <p className='my-6 text-xl leading-8'>The Leela Palace Jaipur is a beacon of luxury and splendor, and therefore, one of the most desired luxury hotels Jaipur has to offer. Rich in splendorous architectures, lavish world-class amenities, and impeccable services, this hotel provides a perfect place for those seeking a stunning destination wedding in Jaipur. Bringing the finest Rajputana grandeur with finest contemporary luxury, The Leela Palace Jaipur is indeed one of the candidates for the top hotels in Jaipur.</p>
 
                         <h2 className='text-2xl md:text-3xl lg:text-4xl mt-6'>A Luxury Destination for Grand Weddings</h2>
@@ -598,15 +598,7 @@ function Royalroom() {
                             </div>
                         </div> */}
 
-                        <div className="w-full h-64 rounded-md overflow-hidden">
-                            <iframe
-                                title="Google Map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153168!3d-37.81627917975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773e517a29e0c5!2s1234%20Main%20Street%2C%20Cityville!5e0!3m2!1sen!2s!4v1696113149612!5m2!1sen!2s"
-                                className="w-full h-full border-0"
-                                allowFullScreen
-                                loading="lazy"
-                            ></iframe>
-                        </div>
+
 
                     </div>
 
@@ -711,37 +703,15 @@ function Royalroom() {
                             </div>
 
                             <div className="mt-8 font-forum">
-                                <h2 className="text-2xl font-bold text-center mb-4">Contact Us</h2>
-                                <Form
-                                    form={form}
-                                    layout="vertical"
-                                    onFinish={onFinish}
-                                    className="space-y-4"
-                                >
-                                    <Form.Item label="Name" name="name" rules={[{ required: true, message: "Please enter your name" }]}>
-                                        <Input placeholder="Your Name" className="px-4 py-2 rounded" />
-                                    </Form.Item>
-                                    <Form.Item label="Email" name="email" rules={[{ required: true, message: "Please enter your email" }, { type: "email", message: "Please enter a valid email" }]}>
-                                        <Input placeholder="Your Email" className="px-4 py-2 rounded" />
-                                    </Form.Item>
-                                    <Form.Item label="Mobile" name="mobile" rules={[{ required: true, message: "Please enter your mobile number" }]}>
-                                        <Input placeholder="Your Mobile Number" className="px-4 py-2 rounded" />
-                                    </Form.Item>
-                                    <Form.Item label="Tentative Wedding Date" name="weddingDate" rules={[{ required: true, message: "Please enter the wedding date" }]}>
-                                        <Input placeholder="Tentative Wedding Date" className="px-4 py-2 rounded" />
-                                    </Form.Item>
-                                    <Form.Item label="No Of Guests" name="guests" rules={[{ required: true, message: "Please enter the number of guests" }]}>
-                                        <Input placeholder="Number of Guests" className="px-4 py-2 rounded" />
-                                    </Form.Item>
-                                    <Form.Item label="Message" name="message" rules={[{ required: true, message: "Please enter your message" }]}>
-                                        <Input.TextArea rows={4} placeholder="Your Message" className="px-4 py-2 rounded" />
-                                    </Form.Item>
-                                    <Form.Item>
-                                        <Button type="primary" htmlType="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-                                            Submit
-                                        </Button>
-                                    </Form.Item>
-                                </Form>
+                            <div className="w-full h-64 rounded-md overflow-hidden">
+                                    <iframe
+                                        title="Google Map"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153168!3d-37.81627917975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773e517a29e0c5!2s1234%20Main%20Street%2C%20Cityville!5e0!3m2!1sen!2s!4v1696113149612!5m2!1sen!2s"
+                                        className="w-full h-full border-0"
+                                        allowFullScreen
+                                        loading="lazy"
+                                    ></iframe>
+                                </div>
 
 
                                 <div className="w-full max-w-md bg-white p-6 rounded-lg ">

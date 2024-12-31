@@ -545,13 +545,29 @@ function Header2() {
         <div
             className={`z-20 ${isSticky
                 ? "sticky top-0 bg-white/30 backdrop-blur-md shadow-md "
-                : "w-full absolute z-20"
-            }`}
+                : "w-full absolute z-20 bg-white/30 backdrop-blur-md shadow-md "
+                }`}
         >
-            <div className="w-full z-20">
+            <div className="w-full h-28 z-20">
+
+              
+
                 <div className="container mx-auto w-full max-w-[1280px] flex items-center justify-between py-4 px-6">
+                      <div className="hidden absolute top-0 right-28 py-2 px-4 md:px-6 md:flex items-center space-x-4">
+                    <a
+                        href="https://wa.me/+909876543210"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2"
+                    >
+                        <img src={icon1} alt="WhatsApp" className="h-6" />
+                        <span className="text-black">+90-9876543210</span>
+                    </a>
+                    <span className="text-gray-500">/</span>
+                    <span className="text-black">+91-0123456789</span>
+                </div>
                     <div className="relative flex items-center space-x-2">
-                        <img src={logo} className="h-16 md:h-28" alt="Logo" />
+                        <img src={logo} className="h-16 md:h-20" alt="Logo" />
                     </div>
                     <div>
                         <nav className="hidden md:flex items-center space-x-8">
